@@ -1,13 +1,106 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.swiper-container {
+  width: 100%;
+  height: 400px; /* Full viewport height */
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  color: white;
 }
+
+.text-blank {
+  background-color: #000;
+}
+
+.text1 {
+  background-color: #111;
+}
+
+.text2 {
+  background-color: #222;
+}
+
+.text3 {
+  background-color: #333;
+}
+
+
+/* styles/fonts.css */
+
+@font-face {
+  font-family: 'MonumentExtended';
+  src: url('../src/Fonts/PPMonumentExtended-Black-BF645465a1e687b.otf') format('opentype');
+  /* Add other font formats if needed */
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MonumentExtended';
+  src: url('../src/Fonts/PPMonumentExtended-Light-BF645465a264007.otf') format('opentype');
+  /* Add other font formats if needed */
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MonumentExtended';
+  src: url('../src/Fonts/PPMonumentExtended-Regular-BF645465a253250.otf') format('opentype');
+  /* Add other font formats if needed */
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MonumentExtended';
+  src: url('../src/Fonts/MonumentExtended-Ultrabold.otf') format('opentype');
+  /* Add other font formats if needed */
+  font-weight: bold;
+  font-style: normal;
+}
+
+
+
+
+/* Add these styles to your CSS file or a <style> block */
+.image-container {
+  position: relative;
+  display: inline-block;
+}
+
+.image-container img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.text-overlay {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  color: black;
+  font-size: 24px;
+  font-weight: bold;
+  transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.image-container:hover .text-overlay {
+  color: blue;
+  transform: scale(1.1) translateX(10px);
+}
+
+body
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
