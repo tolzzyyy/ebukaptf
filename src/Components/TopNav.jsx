@@ -9,7 +9,7 @@ const TopNav = () => {
 
   const [open, setIsopen] = useState(false)
   return (
-    <div className=' w-full    px-[20px] lg:px-[40px] xl:px-[65px]'>
+    <div className=' w-full    px-[30px] lg:px-[40px] xl:px-[65px]'>
       <nav className=' flex justify-between  items-center'>
        
         <div className='flex items-center w-[232px] mt-4 md:mt-0 ml-[-20px] gap-2 md:gap-3  justify-center'>
