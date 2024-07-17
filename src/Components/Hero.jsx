@@ -48,10 +48,10 @@ const Body = () => {
           }}
           speed={1000}
           effect='slide'
-          className="swiper-container h-[500px] lg:w-full text-black"
+          className="swiper-container lg:h-[400px] h-[300px] lg:w-full text-black"
         >
           <SwiperSlide>
-            <div className={`absolute w-full h-full text-black flex flex-col gap-5 justify-center max-h-[400px] leading-[1.5] scale-${activeIndex === 0 ? '4' : '2'}`}>
+            <div className={`absolute w-full h-full text-black flex flex-col gap-5 justify-center  max-h-[400px] leading-[1.5] scale-${activeIndex === 0 ? '4' : '2'}`}>
               <h1 className='px-4 text-4xl sm:text-4xl md:text-5xl lg:text-[100px] w-[200px] font-bold'>Slow </h1>
               <h1 className='px-4 text-4xl sm:text-4xl md:text-5xl lg:text-[100px] font-bold'>Motion,</h1>
             </div>

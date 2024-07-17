@@ -4,8 +4,8 @@ import memoji from '../Assets/Memoji.png';
 
 const TopNav = () => {
   return (
-    <div className=' w-full  px-[65px]'>
-      <nav className='flex justify-between items-center'>
+    <div className=' w-full   px-[65px]'>
+      <nav className=' hidden md:flex justify-between items-center'>
         <div className='flex items-center w-[232px] ml-[-20px] gap-3  justify-center'>
           <NavLink to='/' end className=''>
             <img className=' w-[106px]' src={memoji} alt="" />

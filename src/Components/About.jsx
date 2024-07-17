@@ -10,10 +10,10 @@ const About = () => {
     <div>
       <div className="px-4 md:px-[80px] lg:px-[65px] about flex flex-col md:flex-row justify-center my-[50px] md:my-0 items-center min-h-[500px] md:h-[100vh] ">
         <div className="flex flex-col md:flex-row items-center w-full justify-between gap-10 md:gap-8">
-          <div className="w-full md:w-[420px] lg:w-[450px]">
+          <div className="w-[330px] md:w-[420px] lg:w-[450px]">
             <img src={Ebuka} className="w-full h-auto" alt="Profile" />
           </div>
-          <div className="w-full md:w-[500px] lg:w-[767px] 2xl:w-[600px] text-[12px] flex flex-col gap-[40px] md:gap-8">
+          <div className="w-[330px] md:w-[500px] lg:w-[767px] 2xl:w-[600px] text-[12px] flex flex-col gap-[40px] md:gap-8">
             <h1>
               Hi, I’m EBUKA! If you’ve gotten this far, I now consider us friends. It’s nice to meet you! I'm a motion and visual designer passionate about creating visuals that tell stories and designing brand experiences that improve everyday lives. I love bold colors, textures, and expressive copywriting! I’m an ISMS Major at something University and currently interning with the wonderful design & marcom team at Apple.
             </h1>
