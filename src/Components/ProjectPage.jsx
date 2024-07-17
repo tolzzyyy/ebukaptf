@@ -8,13 +8,13 @@ import oxellus from "../Assets/oxellus.png";
 
 const ProjectPage = () => {
   return (
-    <div className="w-full mt-[50px] px-[20px] lg:px-[40px] xl:px-[65px] h-full border-t-[1px]">
+    <div className="w-full mt-[50px] max-w-[1640px] mx-auto px-[30px] lg:px-[40px] xl:px-[65px] h-full border-t-[1px]">
       <div className="flex flex-col">
-        <div className="md:pt-[80px] pt-[30px] flex flex-col items-center md:flex-row justify-between gap-8 md:gap-8">
+        <div className="md:pt-[80px] pt-[30px] flex flex-col items-center md:flex-row md:justify-between  2xl: gap-8 md:gap-8">
           <div className="relative group w-full md:w-auto">
-            <div className="relative w-full lg:w-auto">
+            <div className="relative w-full lg:w-auto 2xl:w-auto">
               <div className="absolute top-0 h-full bg-blue-500 transition-all duration-700 ease-in-out w-0 group-hover:w-[20px]"></div>
-              <img src={brimble} className="w-full h-auto" alt="" />
+              <img src={brimble} className="w-full  h-auto" alt="" />
             </div>
             <div className="flex flex-col mt-3">
               <h1 className="transition-all duration-700 text-[13px] lg:text-[20px] xl:text-[27px] ease-in-out group-hover:text-blue-500">
