@@ -18,7 +18,7 @@ const Body = () => {
 
   return (
     <div>
-    <div className='max-w-[1640px] h-full  font-monument-extended mt-[100px]  mx-auto p-4 px-[50px]'>
+    <div className='max-w-[1640px] h-full  font-monument-extended mt-[100px]  mx-auto p-4 px-[20px] lg:px-[40px] xl:px-[65px]'>
       <div className=' relative'>
         <Swiper
           onSlideChange={(swiper) => handleSlideChange(swiper)}
