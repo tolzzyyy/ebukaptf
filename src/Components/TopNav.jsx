@@ -6,7 +6,7 @@ import LoadingAbout from './LoadingAbout';
 import LoadingPlayground from './LoadingPlayground';
 
 const TopNav = () => {
-  const [open, setIsOpen] = useState(false);
+  const [open, setOpen] = useState(false);
   const [loadingState, setLoadingState] = useState({
     about: false,
     playground: false,
@@ -19,6 +19,7 @@ const TopNav = () => {
     setLoadingState({ ...loadingState, about: true });
     setTimeout(() => {
       navigate('/about');
+      setOpen(false); // Close the navbar when navigating
     }, 4000); // Simulate loading delay (adjust as needed)
   };
 
@@ -27,6 +28,7 @@ const TopNav = () => {
     setLoadingState({ ...loadingState, playground: true });
     setTimeout(() => {
       navigate('/playground');
+      setOpen(false); // Close the navbar when navigating
     }, 4000); // Simulate loading delay (adjust as needed)
   };
 
@@ -45,6 +47,42 @@ const TopNav = () => {
       }, 4000); // Simulate loading delay (adjust as needed)
     }
   }, [location.pathname]);
+
+  useEffect(() => {
+    // Function to handle body scrolling when the mobile menu is open or closed
+    const handleBodyScroll = () => {
+      if (open) {
+        document.body.style.overflow = 'hidden'; // Disable body scrolling
+      } else {
+        document.body.style.overflow = 'auto'; // Enable body scrolling
+      }
+    };
+
+    // Add event listener for body scrolling
+    window.addEventListener('scroll', handleBodyScroll);
+
+    // Clean up event listener on component unmount
+    return () => {
+      window.removeEventListener('scroll', handleBodyScroll);
+    };
+  }, [open]);
+
+  // Effect to restore body scroll when mobile menu is closed
+  useEffect(() => {
+    const handleBodyScrollRestore = () => {
+      document.body.style.overflow = 'auto'; // Restore default body scroll behavior
+    };
+
+    // Cleanup function to restore scroll on component unmount or menu close
+    if (!open) {
+      handleBodyScrollRestore();
+    }
+
+    // Clean up function on component unmount
+    return () => {
+      handleBodyScrollRestore();
+    };
+  }, [open]);
 
   return (
     <div className='w-full max-w-[1640px] mx-auto px-[30px] lg:px-[40px] xl:px-[65px]'>
@@ -72,12 +110,12 @@ const TopNav = () => {
           </NavLink>
           <a className='hover:text-blue-500 transition-all duration-700 ease-in-out underline' href="https://drive.google.com/file/d/1ukJvpmSv2GOcYxwvyibqgDZIKw7929PO/view">Résumé</a>
         </ul>
-        <div onClick={() => setIsOpen(!open)} className='flex lg:hidden mt-4 cursor-pointer'>
-          {open ? <FaTimes size={24} /> : <FaBars size={24} />}
+        <div onClick={() => setOpen(!open)} className='flex lg:hidden mt-4 cursor-pointer'>
+          {open ? <FaTimes className='z-50 fixed right-[30px] top-4 text-black' size={24} /> : <FaBars size={24} />}
         </div>
       </nav>
-      {open && (
-        <ul className='flex flex-col gap-4 text-[12px] mt-4 lg:hidden'>
+      <div className={`fixed top-0 left-0 w-full h-full bg-white z-30 overflow-y-auto transition-transform duration-500 transform ${open ? 'translate-y-0' : '-translate-y-full'}`}>
+        <div className='flex flex-col gap-4 text-[12px] justify-center items-center p-4 h-full'>
           <NavLink
             to='/about'
             className={({ isActive }) => (isActive ? 'text-blue-500' : 'hover:text-blue-500 transition-all duration-700 ease-in-out text-black')}
@@ -93,8 +131,8 @@ const TopNav = () => {
             Playground
           </NavLink>
           <a className='hover:text-blue-500 transition-all duration-700 ease-in-out underline' href="https://drive.google.com/file/d/1ukJvpmSv2GOcYxwvyibqgDZIKw7929PO/view">Résumé</a>
-        </ul>
-      )}
+        </div>
+      </div>
       {loadingState.about && <LoadingAbout />}
       {loadingState.playground && <LoadingPlayground />}
     </div>
