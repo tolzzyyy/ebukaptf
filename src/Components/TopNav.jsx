@@ -96,14 +96,14 @@ const TopNav = () => {
         <ul className='hidden lg:flex gap-[70px] text-[12px] items-center'>
           <NavLink
             to='/about'
-            className={({ isActive }) => (isActive ? 'text-blue-500' : 'hover:text-blue-500 transition-all duration-700 ease-in-out text-black')}
+            className='nav-link' // Apply your own styles or classNames here
             onClick={handleAboutClick} // Handle click on About link
           >
             About
           </NavLink>
           <NavLink
             to='/playground'
-            className={({ isActive }) => (isActive ? 'text-blue-500' : 'hover:text-blue-500 transition-all duration-700 ease-in-out text-black')}
+            className='nav-link' // Apply your own styles or classNames here
             onClick={handlePlaygroundClick} // Handle click on Playground link
           >
             Playground
@@ -118,14 +118,14 @@ const TopNav = () => {
         <div className='flex flex-col gap-4 text-[12px] justify-center items-center p-4 h-full'>
           <NavLink
             to='/about'
-            className={({ isActive }) => (isActive ? 'text-blue-500' : 'hover:text-blue-500 transition-all duration-700 ease-in-out text-black')}
+            className='nav-link' // Apply your own styles or classNames here
             onClick={handleAboutClick} // Handle click on About link in mobile menu
           >
             About
           </NavLink>
           <NavLink
             to='/playground'
-            className={({ isActive }) => (isActive ? 'text-blue-500' : 'hover:text-blue-500 transition-all duration-700 ease-in-out text-black')}
+            className='nav-link' // Apply your own styles or classNames here
             onClick={handlePlaygroundClick} // Handle click on Playground link in mobile menu
           >
             Playground
