@@ -111,7 +111,7 @@ const TopNav = () => {
           <a className='hover:text-blue-500 transition-all duration-700 ease-in-out underline' href="https://drive.google.com/file/d/1ukJvpmSv2GOcYxwvyibqgDZIKw7929PO/view">Résumé</a>
         </ul>
         <div onClick={() => setOpen(!open)} className='flex lg:hidden mt-4 cursor-pointer'>
-          {open ? <FaTimes className='z-50 fixed right-[30px] top-4 text-black' size={24} /> : <FaBars size={24} />}
+          {open ? <FaTimes className='z-50 fixed right-[30px] top-[40px] text-black' size={24} /> : <FaBars size={24} />}
         </div>
       </nav>
       <div className={`fixed top-0 left-0 w-full h-full bg-white z-30 overflow-y-auto transition-transform duration-500 transform ${open ? 'translate-y-0' : '-translate-y-full'}`}>
