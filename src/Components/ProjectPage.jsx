@@ -17,7 +17,7 @@ const ProjectPage = () => {
               <img src={brimble} className="w-full  h-auto" alt="" />
             </div>
             <div className="flex flex-col mt-3">
-              <h1 className="transition-all duration-700 text-[13px] lg:text-[20px] xl:text-[27px] ease-in-out group-hover:text-blue-500">
+              <h1 className="transition-all duration-700 text-[13px] lg:text-[9px] xl:text-[21px] ease-in-out group-hover:text-blue-500">
                 Brimble Beta Launch
               </h1>
               <p className="text-[#737373] text-[9px] lg:text-[12px]">Identity and motion design</p>
@@ -29,7 +29,7 @@ const ProjectPage = () => {
               <img src={guardians} className="w-full h-auto" alt="" />
             </div>
             <div className="flex flex-col mt-3">
-              <h1 className="transition-all duration-700 text-[13px] lg:text-[20px] xl:text-[27px] ease-in-out group-hover:text-blue-500">
+              <h1 className="transition-all duration-700 text-[13px] lg:text-[9px] xl:text-[21px] ease-in-out group-hover:text-blue-500">
                 Guild of Guardians Cinematic
               </h1>
               <p className="text-[#737373] text-[9px] lg:text-[12px]">Identity, Packaging and experience design</p>
@@ -43,7 +43,7 @@ const ProjectPage = () => {
               <img src={brimble2} className="w-full h-auto" alt="" />
             </div>
             <div className="flex flex-col mt-3">
-              <h1 className="transition-all duration-700 text-[13px] lg:text-[20px] xl:text-[27px] ease-in-out group-hover:text-blue-500">
+              <h1 className="transition-all duration-700 text-[13px] lg:text-[9px] xl:text-[21px] ease-in-out group-hover:text-blue-500">
                 Welcome To Brimble
               </h1>
               <p className="text-[#737373] text-[9px] lg:text-[12px]">Motion design and Illustration</p>
@@ -55,7 +55,7 @@ const ProjectPage = () => {
               <img src={nft} className="w-full h-auto" alt="" />
             </div>
             <div className="flex flex-col mt-3">
-              <h1 className="transition-all duration-700 text-[13px] lg:text-[20px] xl:text-[27px] ease-in-out group-hover:text-blue-500">
+              <h1 className="transition-all duration-700 text-[13px] lg:text-[9px] xl:text-[21px] ease-in-out group-hover:text-blue-500">
                 NFT ng
               </h1>
               <p className="text-[#737373] text-[9px] lg:text-[12px]">Identity, Packaging and experience design</p>
@@ -69,7 +69,7 @@ const ProjectPage = () => {
               <img src={bdomain} className="w-full h-auto" alt="" />
             </div>
             <div className="flex flex-col mt-3">
-              <h1 className="transition-all duration-700  text-[13px] lg:text-[20px] xl:text-[27px] ease-in-out group-hover:text-blue-500">
+              <h1 className="transition-all duration-700  text-[13px] lg:text-[9px] xl:text-[21px] ease-in-out group-hover:text-blue-500">
                 Brimble Domains
               </h1>
               <p className="text-[#737373] text-[9px] lg:text-[12px]">Motion design and art direction</p>
@@ -81,7 +81,7 @@ const ProjectPage = () => {
               <img src={oxellus} className="w-full h-auto" alt="" />
             </div>
             <div className="flex flex-col mt-3">
-              <h1 className="transition-all duration-700 text-[13px] lg:text-[20px] xl:text-[27px] ease-in-out group-hover:text-blue-500">
+              <h1 className="transition-all duration-700 text-[13px] lg:text-[9px] xl:text-[21px] ease-in-out group-hover:text-blue-500">
                 Guild of Guardians Static
               </h1>
               <p className="text-[#737373] text-[9px] lg:text-[12px]">Identity and motion design</p>
