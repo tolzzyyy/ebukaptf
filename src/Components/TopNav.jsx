@@ -27,7 +27,7 @@ const TopNav = () => {
     setLoadingState({ ...loadingState, playground: true });
     setTimeout(() => {
       navigate('/playground');
-    }, 4300); // Simulate loading delay (adjust as needed)
+    }, 4000); // Simulate loading delay (adjust as needed)
   };
 
   // Effect to manage loading state when navigating back using browser navigator
@@ -42,7 +42,7 @@ const TopNav = () => {
       setLoadingState({ ...loadingState, playground: true });
       setTimeout(() => {
         setLoadingState({ ...loadingState, playground: false });
-      }, 4300); // Simulate loading delay (adjust as needed)
+      }, 4000); // Simulate loading delay (adjust as needed)
     }
   }, [location.pathname]);
 
