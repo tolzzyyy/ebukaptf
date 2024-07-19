@@ -8,12 +8,12 @@ import { FaTwitter } from "react-icons/fa";
 const About = () => {
   return (
     <div>
-      <div className="  px-[30px] max-w-[1640px] mx-auto lg:px-[40px] xl:px-[65px] about flex flex-col md:flex-row justify-center my-[50px]  xl:my-0 items-center min-h-[500px] xl:h-[100vh] ">
+      <div className="  px-[30px] max-w-[1640px] mx-auto lg:px-[40px] xl:px-[65px] about flex flex-col md:flex-row justify-center my-[30px]  xl:my-0 items-center min-h-[400px] xl:h-[100vh] ">
       <div className="flex flex-col lg:flex-row min-h-[100vh] items-center w-full  lg:justify-between 2xl:justify-center 2xl:gap-[200px] gap-[40px] md:gap-8">
           <div className="w-auto lg:w-[460px] xl:w-[600px]">
             <img src={Ebuka} className=" 2xl:w-[600px] xl:w-[500px] h-auto" alt="Profile" />
           </div>
-          <div className="w-auto  lg:w-[767px] 2xl:w-[800px] font-[400] leading-[13.6px] lg:leading-[normal] 2xl:leading-6 2xl:text-[15px]   text-[8.2px] md:text-[10px] lg:text-[8px] xl:text-[14px] flex flex-col gap-[30px] md:gap-7 xl:gap-8">
+          <div className="w-auto  lg:w-[767px] 2xl:w-[800px] font-[400] leading-[13.6px] lg:leading-[normal] 2xl:leading-6 2xl:text-[15px]   text-[8.3px] md:text-[10px] lg:text-[8px] xl:text-[14px] flex flex-col gap-[30px] md:gap-7 xl:gap-8">
             <h1>
               Hi, I’m EBUKA! If you’ve gotten this far, I now consider us friends. It’s nice to meet you! I'm a motion and visual designer passionate about creating visuals that tell stories and designing brand experiences that improve everyday lives. I love bold colors, textures, and expressive copywriting! I’m an ISMS Major at something University and currently interning with the wonderful design & marcom team at Apple.
             </h1>
