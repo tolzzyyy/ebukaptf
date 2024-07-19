@@ -58,29 +58,11 @@ const TopNav = () => {
       }
     };
 
-    // Add event listener for body scrolling
-    window.addEventListener('scroll', handleBodyScroll);
-
-    // Clean up event listener on component unmount
-    return () => {
-      window.removeEventListener('scroll', handleBodyScroll);
-    };
-  }, [open]);
-
-  // Effect to restore body scroll when mobile menu is closed
-  useEffect(() => {
-    const handleBodyScrollRestore = () => {
-      document.body.style.overflow = 'auto'; // Restore default body scroll behavior
-    };
-
-    // Cleanup function to restore scroll on component unmount or menu close
-    if (!open) {
-      handleBodyScrollRestore();
-    }
+    handleBodyScroll(); // Apply the scroll handling on each render
 
     // Clean up function on component unmount
     return () => {
-      handleBodyScrollRestore();
+      document.body.style.overflow = 'auto'; // Restore default body scroll behavior
     };
   }, [open]);
 
@@ -114,25 +96,27 @@ const TopNav = () => {
           {open ? <FaTimes className='z-50 fixed right-[30px] top-[40px] text-black' size={24} /> : <FaBars size={24} />}
         </div>
       </nav>
-      <div className={`fixed top-0 left-0 w-full h-full bg-white z-30 overflow-y-auto transition-transform duration-500 transform ${open ? 'translate-y-0' : '-translate-y-full'}`}>
-        <div className='flex flex-col gap-4 text-[12px] justify-center items-center p-4 h-full'>
-          <NavLink
-            to='/about'
-            className='nav-link' // Apply your own styles or classNames here
-            onClick={handleAboutClick} // Handle click on About link in mobile menu
-          >
-            About
-          </NavLink>
-          <NavLink
-            to='/playground'
-            className='nav-link' // Apply your own styles or classNames here
-            onClick={handlePlaygroundClick} // Handle click on Playground link in mobile menu
-          >
-            Playground
-          </NavLink>
-          <a className='hover:text-blue-500 transition-all duration-700 ease-in-out underline' href="https://drive.google.com/file/d/1ukJvpmSv2GOcYxwvyibqgDZIKw7929PO/view">Résumé</a>
+      {open && (
+        <div className='fixed top-0 left-0 w-full h-full bg-white z-30 overflow-y-auto'>
+          <div className='flex flex-col gap-4 text-[12px] justify-center items-center p-4 h-full'>
+            <NavLink
+              to='/about'
+              className='nav-link' // Apply your own styles or classNames here
+              onClick={handleAboutClick} // Handle click on About link in mobile menu
+            >
+              About
+            </NavLink>
+            <NavLink
+              to='/playground'
+              className='nav-link' // Apply your own styles or classNames here
+              onClick={handlePlaygroundClick} // Handle click on Playground link in mobile menu
+            >
+              Playground
+            </NavLink>
+            <a className='hover:text-blue-500 transition-all duration-700 ease-in-out underline' href="https://drive.google.com/file/d/1ukJvpmSv2GOcYxwvyibqgDZIKw7929PO/view">Résumé</a>
+          </div>
         </div>
-      </div>
+      )}
       {loadingState.about && <LoadingAbout />}
       {loadingState.playground && <LoadingPlayground />}
     </div>
