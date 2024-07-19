@@ -44,8 +44,10 @@ const Body = () => {
           loop={true}
           autoplay={{
             delay: 3000, // Delay between slides in ms
-            disableOnInteraction: false, // Autoplay will not stop after user interactions
+            disableOnInteraction: false,
+            allowTouchMove: false // Autoplay will not stop after user interactions
           }}
+       
           speed={1000}
           effect='slide'
           className="swiper-container lg:h-[400px] h-[300px] lg:w-full text-black"
