@@ -5,11 +5,13 @@ import About from './Components/About';
 import Layout from './Components/Layout';
 import Hero from './Components/Hero';
 import PlayGround from './Components/PlayGround';
+import SpotifyTopTracks from './Components/SpotifyTopTracks';
 
 const App = () => {
   return (
     <div className='font-monument-extended'>
       {/* <TopNav /> */}
+      
       <Routes>
         <Route path='/' element={<Layout />}>
           <Route index element={<Hero />} /> {/* Default route */}

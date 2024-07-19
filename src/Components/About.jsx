@@ -4,10 +4,12 @@ import { BsBehance, BsLinkedin, BsMailbox, BsTwitter } from "react-icons/bs";
 import { LiaLinkedin } from "react-icons/lia";
 import { CgMail } from "react-icons/cg";
 import { FaTwitter } from "react-icons/fa";
+import SpotifyTopTracks from "./SpotifyTopTracks";
 
 const About = () => {
   return (
     <div>
+      <SpotifyTopTracks/>
       <div className="  px-[30px] max-w-[1640px] mx-auto lg:px-[40px] xl:px-[65px] about flex flex-col md:flex-row justify-center my-[20px]   xl:my-0 items-center min-h-[400px] xl:h-[100vh] ">
       <div className="flex flex-col lg:flex-row min-h-[100vh] items-center w-full  lg:justify-between 2xl:justify-center 2xl:gap-[200px] gap-[40px] md:gap-8">
           <div className="w-auto lg:w-[460px] xl:w-[600px]">
@@ -26,21 +28,23 @@ const About = () => {
             <div className="flex items-center gap-5">
               <p>Stay with me</p>
               <div className="flex items-center gap-3">
-                <a href="https://www.behance.net" target="_blank" rel="noopener noreferrer"><BsBehance size={26} className="text-blue-500"/></a>
-                <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer"><LiaLinkedin size={26} className="text-blue-500"/></a>
-                <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer"><FaTwitter size={24} className="text-blue-500"/></a>
+                <a href="https://www.behance.net/ebukauche1" target="_blank" rel="noopener noreferrer"><BsBehance size={26} className="text-blue-500"/></a>
+                <a href="https://www.linkedin.com/in/ebukau?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank" rel="noopener noreferrer"><LiaLinkedin size={26} className="text-blue-500"/></a>
+                <a href="https://x.com/t0_ge_?s=21" target="_blank" rel="noopener noreferrer"><FaTwitter size={24} className="text-blue-500"/></a>
                 <a href="mailto:Eburogersuche@yahoo.com"><CgMail size={26} className="text-blue-500"/></a>
               </div>
             </div>
           </div>
         </div>
+       
       </div>
+      
       <div className="border-t-[1px] flex flex-col items-center gap-10 justify-center py-8 md:py-12 h-auto border-black mx-[20px] lg:mx-[40px] xl:mx-[65px]">
         <h1 className="text-lg font-bold lg:text-2xl">Let’s work <span className="text-blue-500">together</span> :)</h1>
         <div className="flex items-center gap-3">
-          <a href="https://www.behance.net" target="_blank" rel="noopener noreferrer"><BsBehance size={26} /></a>
-          <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer"><LiaLinkedin size={26} /></a>
-          <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer"><FaTwitter size={26} /></a>
+          <a href="https://www.behance.net/ebukauche1" target="_blank" rel="noopener noreferrer"><BsBehance size={26} /></a>
+          <a href="https://www.linkedin.com/in/ebukau?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank" rel="noopener noreferrer"><LiaLinkedin size={26} /></a>
+          <a href="https://x.com/t0_ge_?s=21" target="_blank" rel="noopener noreferrer"><FaTwitter size={26} /></a>
           <a href="mailto:Eburogersuche@yahoo.com"><CgMail size={26} /></a>
         </div>
       </div>

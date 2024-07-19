@@ -4,6 +4,7 @@ import 'swiper/css';
 import 'swiper/css/free-mode';
 import { FreeMode, Autoplay } from 'swiper/modules';
 import ProjectPage from './ProjectPage';
+import SpotifyTopTracks from './SpotifyTopTracks';
 
 const Body = () => {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -14,7 +15,8 @@ const Body = () => {
 
   return (
     <div>
-      <div className='max-w-[1640px] h-full font-monument-extended mt-[40px] md:mt-[100px] mx-auto p-4 px-[30px] lg:px-[40px] xl:px-[65px]'>
+      <SpotifyTopTracks/>
+      <div className='max-w-[1640px] h-full font-monument-extended mt-[100px] md:mt-[100px] mx-auto p-4 px-[30px] lg:px-[40px] xl:px-[65px]'>
         <div className='relative'>
           <Swiper
             onSlideChange={(swiper) => handleSlideChange(swiper)}
@@ -39,7 +41,7 @@ const Body = () => {
             }}
             speed={1000}
             effect='slide'
-            className="swiper-container lg:h-[400px] h-[200px] md:h-[300px] lg:w-full text-black"
+            className="swiper-container lg:h-[400px] h-[300px] md:h-[300px] lg:w-full text-black"
           >
             <SwiperSlide>
               <div className={`absolute w-full h-full text-black flex flex-col gap-5 justify-center max-h-[400px] leading-[1.5] scale-${activeIndex === 0 ? '4' : '2'}`}>
