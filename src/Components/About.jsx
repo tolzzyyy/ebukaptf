@@ -8,7 +8,7 @@ import { FaTwitter } from "react-icons/fa";
 const About = () => {
   return (
     <div>
-      <div className="  px-[30px] max-w-[1640px] mx-auto lg:px-[40px] xl:px-[65px] about flex flex-col md:flex-row justify-center my-[30px]  xl:my-0 items-center min-h-[400px] xl:h-[100vh] ">
+      <div className="  px-[30px] max-w-[1640px] mx-auto lg:px-[40px] xl:px-[65px] about flex flex-col md:flex-row justify-center my-[20px]   xl:my-0 items-center min-h-[400px] xl:h-[100vh] ">
       <div className="flex flex-col lg:flex-row min-h-[100vh] items-center w-full  lg:justify-between 2xl:justify-center 2xl:gap-[200px] gap-[40px] md:gap-8">
           <div className="w-auto lg:w-[460px] xl:w-[600px]">
             <img src={Ebuka} className=" 2xl:w-[600px] xl:w-[500px] h-auto" alt="Profile" />

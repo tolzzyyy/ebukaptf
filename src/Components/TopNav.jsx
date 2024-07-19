@@ -69,11 +69,11 @@ const TopNav = () => {
   return (
     <div className='w-full max-w-[1640px] mx-auto px-[30px] lg:px-[40px] xl:px-[65px]'>
       <nav className='flex justify-between items-center'>
-        <div className='flex items-center w-[232px] mt-4 md:mt-0 ml-[-20px] gap-2 md:gap-3 justify-center'>
+        <div className='flex items-center w-[232px] mt-4 md:mt-0 ml-[-40px] md:ml-[-20px] gap-2 md:gap-3 justify-center'>
           <NavLink to='/' end className=''>
             <img className='w-[80px] md:w-[106px]' src={memoji} alt="Memoji" />
           </NavLink>
-          <p className='text-[12px]'>Ebuka Uche</p>
+          <p className='md:text-[12px] text-[9px]'>Ebuka Uche</p>
         </div>
         <ul className='hidden lg:flex gap-[70px] text-[12px] items-center'>
           <NavLink
