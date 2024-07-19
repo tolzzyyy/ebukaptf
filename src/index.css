@@ -70,6 +70,9 @@
 .active-link {
   color:  #3b82f6;
 }
+.swiper-container {
+  pointer-events: none;
+}
 
 
 
