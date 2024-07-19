@@ -63,6 +63,13 @@
   font-style: normal;
 }
 
+.nav-link {
+  transition: color 0.3s;
+}
+
+.active-link {
+  color:  #3b82f6;
+}
 
 
 

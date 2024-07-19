@@ -78,15 +78,19 @@ const TopNav = () => {
         <ul className='hidden lg:flex gap-[70px] text-[12px] items-center'>
           <NavLink
             to='/about'
-            className='nav-link' // Apply your own styles or classNames here
-            onClick={handleAboutClick} // Handle click on About link
+            className={({ isActive }) =>
+              isActive ? 'nav-link active-link' : 'nav-link'
+            }
+            onClick={handleAboutClick}
           >
             About
           </NavLink>
           <NavLink
             to='/playground'
-            className='nav-link' // Apply your own styles or classNames here
-            onClick={handlePlaygroundClick} // Handle click on Playground link
+            className={({ isActive }) =>
+              isActive ? 'nav-link active-link' : 'nav-link'
+            }
+            onClick={handlePlaygroundClick}
           >
             Playground
           </NavLink>
@@ -96,27 +100,29 @@ const TopNav = () => {
           {open ? <FaTimes className='z-50 fixed right-[30px] top-[40px] text-black' size={24} /> : <FaBars size={24} />}
         </div>
       </nav>
-      {open && (
-        <div className='fixed top-0 left-0 w-full h-full bg-white z-30 overflow-y-auto'>
-          <div className='flex flex-col gap-4 text-[12px] justify-center items-center p-4 h-full'>
-            <NavLink
-              to='/about'
-              className='nav-link' // Apply your own styles or classNames here
-              onClick={handleAboutClick} // Handle click on About link in mobile menu
-            >
-              About
-            </NavLink>
-            <NavLink
-              to='/playground'
-              className='nav-link' // Apply your own styles or classNames here
-              onClick={handlePlaygroundClick} // Handle click on Playground link in mobile menu
-            >
-              Playground
-            </NavLink>
-            <a className='hover:text-blue-500 transition-all duration-700 ease-in-out underline' href="https://drive.google.com/file/d/1ukJvpmSv2GOcYxwvyibqgDZIKw7929PO/view">Résumé</a>
-          </div>
+      <div className={`fixed top-0 left-0 w-full h-full bg-white z-30 overflow-y-auto transition-transform duration-500 transform ${open ? 'translate-y-0' : '-translate-y-full'}`}>
+        <div className='flex flex-col gap-4 text-[12px] justify-center items-center p-4 h-full'>
+          <NavLink
+            to='/about'
+            className={({ isActive }) =>
+              isActive ? 'nav-link active-link' : 'nav-link'
+            }
+            onClick={handleAboutClick}
+          >
+            About
+          </NavLink>
+          <NavLink
+            to='/playground'
+            className={({ isActive }) =>
+              isActive ? 'nav-link active-link' : 'nav-link'
+            }
+            onClick={handlePlaygroundClick}
+          >
+            Playground
+          </NavLink>
+          <a className='hover:text-blue-500 transition-all duration-700 ease-in-out underline' href="https://drive.google.com/file/d/1ukJvpmSv2GOcYxwvyibqgDZIKw7929PO/view">Résumé</a>
         </div>
-      )}
+      </div>
       {loadingState.about && <LoadingAbout />}
       {loadingState.playground && <LoadingPlayground />}
     </div>
