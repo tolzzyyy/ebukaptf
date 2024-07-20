@@ -41,7 +41,7 @@ const Spotify = () => {
     <div className='max-w-[1640px] h-full font-monument-extended mt-10 mx-auto p-4 px-[30px] lg:px-[40px] xl:px-[65px]'>
       <h1></h1>
       {error && <p>{error}</p>}
-      <ul className="track-lis md:w-[500px] w-[300px] relative rounded-[15px]  p-4  bg-gradient-to-r from-[#092D2F] to-[#093A46] ">
+      <ul className="track-lis md:w-[500px] flex mx-auto items-center w-[300px] relative rounded-[15px]  p-4  bg-gradient-to-r from-[#092D2F] to-[#093A46] ">
         {tracks.map((track) => (
           <li key={track.track.id} className="track-item items-center gap-[12px] md:gap-4 flex">
             <img  src={track.track.album.images[0].url} alt={track.track.name} className="md:w-[132px] w-[80px] " />
