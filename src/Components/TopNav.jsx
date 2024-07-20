@@ -79,7 +79,7 @@ const TopNav = () => {
           <NavLink
             to='/about'
             className={({ isActive }) =>
-              isActive ? 'nav-link active-link' : 'nav-link'
+              isActive ? ' hover:text-blue-500 nav-link active-link' : ' hover:text-blue-500 nav-link'
             }
             onClick={handleAboutClick}
           >
@@ -88,7 +88,7 @@ const TopNav = () => {
           <NavLink
             to='/playground'
             className={({ isActive }) =>
-              isActive ? 'nav-link active-link' : 'nav-link'
+              isActive ? 'nav-link active-link hover:text-blue-500' : 'hover:text-blue-500 nav-link'
             }
             onClick={handlePlaygroundClick}
           >
@@ -105,7 +105,7 @@ const TopNav = () => {
           <NavLink
             to='/about'
             className={({ isActive }) =>
-              isActive ? 'nav-link active-link' : 'nav-link'
+              isActive ? 'nav-link hover:text-blue-500 active-link' : ' hover:text-blue-500 nav-link'
             }
             onClick={handleAboutClick}
           >
@@ -114,7 +114,7 @@ const TopNav = () => {
           <NavLink
             to='/playground'
             className={({ isActive }) =>
-              isActive ? 'nav-link active-link' : 'nav-link'
+              isActive ? 'nav-link active-link hover:text-blue-500' : ' hover:text-blue-500 nav-link'
             }
             onClick={handlePlaygroundClick}
           >

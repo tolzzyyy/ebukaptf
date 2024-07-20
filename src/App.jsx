@@ -5,7 +5,7 @@ import About from './Components/About';
 import Layout from './Components/Layout';
 import Hero from './Components/Hero';
 import PlayGround from './Components/PlayGround';
-import SpotifyTopTracks from './Components/SpotifyTopTracks';
+
 
 const App = () => {
   return (

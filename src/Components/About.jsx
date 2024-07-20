@@ -4,12 +4,10 @@ import { BsBehance, BsLinkedin, BsMailbox, BsTwitter } from "react-icons/bs";
 import { LiaLinkedin } from "react-icons/lia";
 import { CgMail } from "react-icons/cg";
 import { FaTwitter } from "react-icons/fa";
-import SpotifyTopTracks from "./SpotifyTopTracks";
 
 const About = () => {
   return (
     <div>
-      <SpotifyTopTracks/>
       <div className="  px-[30px] max-w-[1640px] mx-auto lg:px-[40px] xl:px-[65px] about flex flex-col md:flex-row justify-center my-[20px]   xl:my-0 items-center min-h-[400px] xl:h-[100vh] ">
       <div className="flex flex-col lg:flex-row min-h-[100vh] items-center w-full  lg:justify-between 2xl:justify-center 2xl:gap-[200px] gap-[40px] md:gap-8">
           <div className="w-auto lg:w-[460px] xl:w-[600px]">
@@ -23,7 +21,7 @@ const About = () => {
               Creating art is another true love whether it’s traditional or digital. You can sometimes find me sketching in Procreate. As a fresh graduate of Information Science & Media Studies from Pan Atlantic University, I want to share my skills and all-round enthusiasm with a new team. If you ever want to chat or have a position or a project that could benefit from my creativity & style, <a className="underline" href="mailto:Eburogersuche@yahoo.com">let's talk!</a> and I shall return your message via virtual carrier pigeon.
             </h1>
             <h1>
-              Thanks for stopping by. I hope you enjoyed my website. If you didn't, here's a little <a className="underline" href="https://wallpapers.com/images/hd/funny-chihuahua-pictures-xsaojsskugo3h6rs.jpg">something special</a> to make up for it :)
+              Thanks for stopping by. I hope you enjoyed my website. If you didn't, here's a little <a className="underline text-blue-500" href="https://wallpapers.com/images/hd/funny-chihuahua-pictures-xsaojsskugo3h6rs.jpg">something special</a> to make up for it :)
             </h1>
             <div className="flex items-center gap-5">
               <p>Stay with me</p>

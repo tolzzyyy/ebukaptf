@@ -4,7 +4,7 @@ import 'swiper/css';
 import 'swiper/css/free-mode';
 import { FreeMode, Autoplay } from 'swiper/modules';
 import ProjectPage from './ProjectPage';
-import SpotifyTopTracks from './SpotifyTopTracks';
+import SpotifyTopTracks from './Spotify';
 
 const Body = () => {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -14,8 +14,9 @@ const Body = () => {
   };
 
   return (
+  
     <div>
-      <SpotifyTopTracks/>
+        {/* <SpotifyTopTracks/> */}
       <div className='max-w-[1640px] h-full font-monument-extended mt-[100px] md:mt-[100px] mx-auto p-4 px-[30px] lg:px-[40px] xl:px-[65px]'>
         <div className='relative'>
           <Swiper
