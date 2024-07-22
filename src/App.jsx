@@ -5,6 +5,7 @@ import About from './Components/About';
 import Layout from './Components/Layout';
 import Hero from './Components/Hero';
 import PlayGround from './Components/PlayGround';
+import Spotify from './Components/Spotify';
 
 
 const App = () => {
@@ -16,6 +17,7 @@ const App = () => {
         <Route path='/' element={<Layout />}>
           <Route index element={<Hero />} /> {/* Default route */}
           <Route path='about' element={<About />} /> {/* /about route */}
+          <Route path='/spotify' element={<Spotify />} /> {/* /about route */}
           <Route path='playground' element={<PlayGround />} /> {/* /about route */}
         </Route>
       </Routes>

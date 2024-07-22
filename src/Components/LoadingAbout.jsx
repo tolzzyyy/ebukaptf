@@ -16,6 +16,7 @@ const LoadingAbout = () => {
       zIndex: 9999, // Ensure it overlays everything else
     }}>
       <img className='w-[40px]' src={Profile} alt="Loading About..." />
+     
     </div>
   );
 };

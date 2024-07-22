@@ -5,7 +5,7 @@ import Spotify from './Spotify';
 const PlayGround = () => {
   return (
     <div>
- <Spotify/>
+
     </div>
   )
 }
