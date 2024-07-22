@@ -3,7 +3,7 @@ import { BsSpotify } from 'react-icons/bs';
 
 // Replace with your Spotify app credentials
 const clientId = '44eb1916c35a4461948dcce94ca21338';
-const redirectUri = 'http://localhost:3000/spotify'; // Ensure this matches the redirect URI in your Spotify app settings
+const redirectUri = 'https://eburogers.vercel.app'; // Ensure this matches the redirect URI in your Spotify app settings
 const scopes = 'user-read-recently-played'; // Scope required to access recently played tracks
 
 const Spotify = () => {
