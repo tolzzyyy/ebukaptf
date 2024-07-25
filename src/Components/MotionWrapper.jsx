@@ -21,7 +21,7 @@ const MotionWrapper = ({ children }) => {
   const pageTransition = {
     type: 'tween',
     ease: 'anticipate',
-    duration: 1.5,
+    duration: 1,
   };
 
   return (

@@ -8,7 +8,7 @@ import oxellus from "../Assets/oxellus.png";
 
 const ProjectPage = () => {
   return (
-    <div className="w-full mt-[50px] max-w-[1640px] mx-auto px-[30px] lg:px-[40px] xl:px-[65px] h-full border-t-[1px]">
+    <div className="w-full mt-[20px] max-w-[1640px] mx-auto px-[30px] lg:px-[40px] xl:px-[65px] h-full border-t-[1px]">
       <div className="flex flex-col">
         <div className="md:pt-[80px] pt-[30px] flex flex-col items-center md:flex-row md:justify-between  2xl: gap-8 md:gap-8">
           <div className="relative group w-full md:w-auto">
