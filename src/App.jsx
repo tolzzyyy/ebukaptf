@@ -17,7 +17,6 @@ const App = () => {
         <Route path='/' element={<Layout />}>
           <Route index element={<Hero />} /> {/* Default route */}
           <Route path='about' element={<About />} /> {/* /about route */}
-          <Route path='/spotify' element={<Spotify />} /> {/* /about route */}
           <Route path='playground' element={<PlayGround />} /> {/* /about route */}
         </Route>
       </Routes>
