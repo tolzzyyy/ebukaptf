@@ -1,25 +1,27 @@
+// App.js
 import React from 'react';
-import TopNav from './Components/TopNav';
-import { Route, Routes } from 'react-router-dom';
+import { Route, Routes, useLocation } from 'react-router-dom';
+import { AnimatePresence } from 'framer-motion';
 import About from './Components/About';
 import Layout from './Components/Layout';
 import Hero from './Components/Hero';
 import PlayGround from './Components/PlayGround';
-import Spotify from './Components/Spotify';
-
+import MotionWrapper from './Components/MotionWrapper';
 
 const App = () => {
+  const location = useLocation();
+
   return (
     <div className='font-monument-extended'>
-      {/* <TopNav /> */}
-      
-      <Routes>
-        <Route path='/' element={<Layout />}>
-          <Route index element={<Hero />} /> {/* Default route */}
-          <Route path='about' element={<About />} /> {/* /about route */}
-          <Route path='playground' element={<PlayGround />} /> {/* /about route */}
-        </Route>
-      </Routes>
+      <AnimatePresence mode='wait'r>
+        <Routes location={location} key={location.pathname}>
+          <Route path='/' element={<Layout />}>
+            <Route index element={<MotionWrapper><Hero /></MotionWrapper>} />
+            <Route path='about' element={<MotionWrapper><About /></MotionWrapper>} />
+            <Route path='playground' element={<MotionWrapper><PlayGround /></MotionWrapper>} />
+          </Route>
+        </Routes>
+      </AnimatePresence>
     </div>
   );
 }

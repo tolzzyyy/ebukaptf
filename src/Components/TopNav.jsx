@@ -7,46 +7,9 @@ import LoadingPlayground from './LoadingPlayground';
 
 const TopNav = () => {
   const [open, setOpen] = useState(false);
-  const [loadingState, setLoadingState] = useState({
-    about: false,
-    playground: false,
-  });
-  const navigate = useNavigate();
-  const location = useLocation();
+  
 
-  // Function to handle navigation to About page
-  const handleAboutClick = () => {
-    setLoadingState({ ...loadingState, about: true });
-    setTimeout(() => {
-      navigate('/about');
-      setOpen(false); // Close the navbar when navigating
-    }, 4000); // Simulate loading delay (adjust as needed)
-  };
 
-  // Function to handle navigation to Playground page
-  const handlePlaygroundClick = () => {
-    setLoadingState({ ...loadingState, playground: true });
-    setTimeout(() => {
-      navigate('/playground');
-      setOpen(false); // Close the navbar when navigating
-    }, 4000); // Simulate loading delay (adjust as needed)
-  };
-
-  // Effect to manage loading state when navigating back using browser navigator
-  useEffect(() => {
-    const { pathname } = location;
-    if (pathname === '/about') {
-      setLoadingState({ ...loadingState, about: true });
-      setTimeout(() => {
-        setLoadingState({ ...loadingState, about: false });
-      }, 4000); // Simulate loading delay (adjust as needed)
-    } else if (pathname === '/playground') {
-      setLoadingState({ ...loadingState, playground: true });
-      setTimeout(() => {
-        setLoadingState({ ...loadingState, playground: false });
-      }, 4000); // Simulate loading delay (adjust as needed)
-    }
-  }, [location.pathname]);
 
   useEffect(() => {
     // Function to handle body scrolling when the mobile menu is open or closed
@@ -81,7 +44,7 @@ const TopNav = () => {
             className={({ isActive }) =>
               isActive ? ' hover:text-blue-500 nav-link active-link' : ' hover:text-blue-500 nav-link'
             }
-            onClick={handleAboutClick}
+          
           >
             About
           </NavLink>
@@ -90,7 +53,7 @@ const TopNav = () => {
             className={({ isActive }) =>
               isActive ? 'nav-link active-link hover:text-blue-500' : 'hover:text-blue-500 nav-link'
             }
-            onClick={handlePlaygroundClick}
+           
           >
             Playground
           </NavLink>
@@ -107,7 +70,7 @@ const TopNav = () => {
             className={({ isActive }) =>
               isActive ? 'nav-link hover:text-blue-500 active-link' : ' hover:text-blue-500 nav-link'
             }
-            onClick={handleAboutClick}
+        
           >
             About
           </NavLink>
@@ -116,15 +79,15 @@ const TopNav = () => {
             className={({ isActive }) =>
               isActive ? 'nav-link active-link hover:text-blue-500' : ' hover:text-blue-500 nav-link'
             }
-            onClick={handlePlaygroundClick}
+          
           >
             Playground
           </NavLink>
           <a className='hover:text-blue-500 transition-all duration-700 ease-in-out underline' href="https://drive.google.com/file/d/1ukJvpmSv2GOcYxwvyibqgDZIKw7929PO/view">Résumé</a>
         </div>
       </div>
-      {loadingState.about && <LoadingAbout />}
-      {loadingState.playground && <LoadingPlayground />}
+      {/* {loadingState.about && <LoadingAbout />}
+      {loadingState.playground && <LoadingPlayground />} */}
     </div>
   );
 };
