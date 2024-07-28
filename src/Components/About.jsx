@@ -15,8 +15,11 @@ const About = () => {
             <img src={Ebuka} className=" 2xl:w-[600px] xl:w-[500px] h-auto" alt="Profile" />
           </div>
           <div className="w-auto  lg:w-[767px] 2xl:w-[800px] font-[400] leading-[13.6px] lg:leading-[normal] 2xl:leading-6 2xl:text-[15px]   text-[8.3px] md:text-[10px] lg:text-[8px] xl:text-[14px] flex flex-col gap-[30px] md:gap-7 xl:gap-8">
+            <h1 className="text-[20px] font-monument-extended font-medium">
+            Hi, I’m EBUKA!
+            </h1>
             <h1>
-              Hi, I’m EBUKA! If you’ve gotten this far, I now consider us friends. It’s nice to meet you! I'm a motion and visual designer passionate about creating visuals that tell stories and designing brand experiences that improve everyday lives. I love bold colors, textures, and expressive copywriting! I’m an ISMS Major at something University and currently interning with the wonderful design & marcom team at Apple.
+              If you’ve gotten this far, I now consider us friends. It’s nice to meet you! I'm a motion and visual designer passionate about creating visuals that tell stories and designing brand experiences that improve everyday lives. I love bold colors, textures, and expressive copywriting! I’m an ISMS Major at something University and currently interning with the wonderful design & marcom team at Apple.
             </h1>
             <h1>
               Creating art is another true love whether it’s traditional or digital. You can sometimes find me sketching in Procreate. As a fresh graduate of Information Science & Media Studies from Pan Atlantic University, I want to share my skills and all-round enthusiasm with a new team. If you ever want to chat or have a position or a project that could benefit from my creativity & style, <a className="underline" href="mailto:Eburogersuche@yahoo.com">let's talk!</a> and I shall return your message via virtual carrier pigeon.
@@ -44,12 +47,7 @@ const About = () => {
       
       <div className="border-t-[1px] flex flex-col items-center gap-10 justify-center py-8 md:py-12 h-auto border-black mx-[20px] lg:mx-[40px] xl:mx-[65px]">
         <h1 className="text-lg font-bold lg:text-2xl">Let’s work <span className="text-blue-500">together</span> :)</h1>
-        <div className="flex items-center gap-3">
-          <a href="https://www.behance.net/ebukauche1" target="_blank" rel="noopener noreferrer"><BsBehance size={26} /></a>
-          <a href="https://www.linkedin.com/in/ebukau?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank" rel="noopener noreferrer"><LiaLinkedin size={26} /></a>
-          <a href="https://x.com/t0_ge_?s=21" target="_blank" rel="noopener noreferrer"><FaTwitter size={26} /></a>
-          <a href="mailto:Eburogersuche@yahoo.com"><CgMail size={26} /></a>
-        </div>
+     
       </div>
     </div>
   );

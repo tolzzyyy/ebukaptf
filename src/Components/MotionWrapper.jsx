@@ -1,8 +1,11 @@
-// MotionWrapper.js
-import React from 'react';
+import React, { useEffect } from 'react';
 import { motion } from 'framer-motion';
 
 const MotionWrapper = ({ children }) => {
+  useEffect(() => {
+    window.scrollTo(0, 0); // Scroll to the top of the page on mount
+  }, []);
+
   const pageVariants = {
     initial: {
       opacity: 0,
@@ -31,6 +34,7 @@ const MotionWrapper = ({ children }) => {
       exit="out"
       variants={pageVariants}
       transition={pageTransition}
+      className="w-full h-full" // Ensure it takes full width and height
     >
       {children}
     </motion.div>
