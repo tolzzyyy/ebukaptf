@@ -33,7 +33,7 @@ const BimblePage = () => {
     };
 
     const handleKeyDown = (e) => {
-      // Disable Ctrl+S and Ctrl+Shift+I
+      
       if (
         (e.ctrlKey && (e.key === "s" || e.key === "S")) ||
         (e.ctrlKey && e.shiftKey && (e.key === "I" || e.key === "i"))

@@ -12,20 +12,20 @@ const TopNav = () => {
 
 
   useEffect(() => {
-    // Function to handle body scrolling when the mobile menu is open or closed
+  
     const handleBodyScroll = () => {
       if (open) {
-        document.body.style.overflow = 'hidden'; // Disable body scrolling
+        document.body.style.overflow = 'hidden';
       } else {
-        document.body.style.overflow = 'auto'; // Enable body scrolling
+        document.body.style.overflow = 'auto'; 
       }
     };
 
-    handleBodyScroll(); // Apply the scroll handling on each render
+    handleBodyScroll(); 
 
-    // Clean up function on component unmount
+   
     return () => {
-      document.body.style.overflow = 'auto'; // Restore default body scroll behavior
+      document.body.style.overflow = 'auto'; 
     };
   }, [open]);
 
