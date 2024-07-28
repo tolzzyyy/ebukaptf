@@ -59,7 +59,7 @@ const BimblePage = () => {
       <div className="relative w-full  ">
         <video
           ref={videoRef}
-          className="w-full h-auto rounded-lg"
+          className="w-full  rounded-lg"
           poster={poster}
           controls={controlsVisible}
           controlsList="nodownload"
@@ -96,8 +96,8 @@ const BimblePage = () => {
         </div>
       </div>
 
-      <div className="md:mt-[50px] w-full mt-[30px] gap-3 flex flex-col">
-        <div className="">
+      <div className="md:mt-[50px] w-full mt-[30px] gap-3 flex items-center flex-col">
+        <div className="w-auto">
           <img src={workflow} alt="" />
         </div>
         <div className=" grid grid-cols-1 md:flex  gap-3">
