@@ -16,7 +16,7 @@ const App = () => {
     <div className='font-monument-extended'>
       <AnimatePresence mode='wait'r>
         <Routes location={location} key={location.pathname}>
-         <Route path='/' element={<Layout />}>
+         <Route path='/' element={<MotionWrapper><Layout /></MotionWrapper>}>
             <Route index element={<MotionWrapper><Hero /></MotionWrapper>} />
             <Route path='about' element={<MotionWrapper><About /></MotionWrapper>} />
             <Route path='playground' element={<MotionWrapper><PlayGround /></MotionWrapper>} />
