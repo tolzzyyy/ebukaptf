@@ -1,10 +1,19 @@
 import React, { useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 import { motion } from 'framer-motion';
 
 const MotionWrapper = ({ children }) => {
+  const location = useLocation();
+
   useEffect(() => {
-    window.scrollTo(0, 0); // Scroll to the top of the page on mount
-  }, []);
+    const handleScrollToTop = () => {
+      window.scrollTo(0, 0);
+    };
+
+    const timeoutId = setTimeout(handleScrollToTop, 100); // Adjust delay as needed
+
+    return () => clearTimeout(timeoutId);
+  }, [location]);
 
   const pageVariants = {
     initial: {

@@ -63,8 +63,8 @@ const TopNav = () => {
           {open ? <FaTimes className='z-50 fixed right-[30px] top-[40px] text-black' size={24} /> : <FaBars size={24} />}
         </div>
       </nav>
-      <div className={`fixed top-0 left-0 w-full h-screen bg-white z-30 overflow-y-auto transition-transform duration-500 transform ${open ? 'translate-y-0' : '-translate-y-full'}`}>
-        <div className='flex flex-col gap-4 text-[12px] justify-center items-center p-4 h-full'>
+      <div className={`fixed top-0 flex items-center justify-center lg:hidden left-0 w-full h-auto bg-white z-30 overflow-y-auto transition-transform duration-500 transform ${open ? 'translate-y-0' : '-translate-y-full'}`}>
+        <div className='flex flex-col gap-4 text-[12px] justify-center items-center p-4 h-screen'>
           <NavLink
             to='/about'
             className={({ isActive }) =>
