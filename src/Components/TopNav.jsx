@@ -10,15 +10,21 @@ const TopNav = () => {
     const handleBodyScroll = () => {
       if (open) {
         document.body.style.overflow = 'hidden';
+        document.body.style.position = 'fixed';
+        document.body.style.width = '100%';
       } else {
-        document.body.style.overflow = 'auto';
+        document.body.style.overflow = '';
+        document.body.style.position = '';
+        document.body.style.width = '';
       }
     };
 
     handleBodyScroll();
 
     return () => {
-      document.body.style.overflow = 'auto';
+      document.body.style.overflow = '';
+      document.body.style.position = '';
+      document.body.style.width = '';
     };
   }, [open]);
 
@@ -68,11 +74,11 @@ const TopNav = () => {
         </div>
       </nav>
       <div
-        className={`fixed top-0 flex items-center justify-center lg:hidden left-0 w-full h-auto bg-white z-30 overflow-y-hidden transition-transform duration-500 transform ${
+        className={`fixed top-0 flex items-center justify-center lg:hidden left-0 w-full h-screen bg-white z-30 overflow-y-auto transition-transform duration-500 transform ${
           open ? 'translate-y-0' : '-translate-y-full'
         }`}
       >
-        <div className="flex flex-col gap-4 text-[12px] justify-center items-center p-4 h-screen">
+        <div className="flex flex-col gap-4 text-[12px] justify-center items-center p-4 h-full">
           <NavLink
             to="/about"
             className={({ isActive }) =>
