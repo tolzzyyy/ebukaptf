@@ -75,10 +75,10 @@ const TopNav = () => {
       </nav>
       <div
         className={`fixed top-0 flex items-center justify-center lg:hidden left-0 w-full h-screen bg-white z-30 overflow-hidden transition-transform duration-500 transform ${
-          open ? 'translate-y-0' : '-translate-y-full'
+          open ? 'translate-y-0 overflow-hidden' : '-translate-y-full overflow-hidden'
         }`}
       >
-        <div className="flex flex-col gap-4 text-[12px] justify-center items-center p-4 h-full">
+        <div className="flex flex-col gap-4 text-[12px] justify-center overflow-hidden items-center p-4 h-full">
           <NavLink
             to="/about"
             className={({ isActive }) =>
