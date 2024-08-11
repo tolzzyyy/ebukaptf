@@ -1,18 +1,17 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useRef } from 'react';
 import { useLocation } from 'react-router-dom';
 import { motion } from 'framer-motion';
 
 const MotionWrapper = ({ children }) => {
   const location = useLocation();
+  const hasScrolled = useRef(false);
 
   useEffect(() => {
-    const handleScrollToTop = () => {
+    if (!hasScrolled.current) {
+      // Scroll to top only on initial mount or first page load
       window.scrollTo(0, 0);
-    };
-
-    const timeoutId = setTimeout(handleScrollToTop, 100); // Adjust delay as needed
-
-    return () => clearTimeout(timeoutId);
+      hasScrolled.current = true;
+    }
   }, [location]);
 
   const pageVariants = {

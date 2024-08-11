@@ -54,7 +54,7 @@ const ProjectPage = () => {
               <p className="text-[#737373] text-[9px] lg:text-[12px]">Motion design and Illustration</p>
             </div>
           </div>
-          <div className="relative group w-full md:w-auto">
+          <Link to='/nft' className="relative group w-full md:w-auto">
             <div className="relative w-full md:w-auto">
               <div className="absolute top-0 h-full bg-blue-500 transition-all duration-700 ease-in-out w-0 group-hover:w-[20px]"></div>
               <img src={nft} className="w-full h-auto" alt="" />
@@ -65,7 +65,7 @@ const ProjectPage = () => {
               </h1>
               <p className="text-[#737373] text-[9px] lg:text-[12px]">Identity, Packaging and experience design</p>
             </div>
-          </div>
+          </Link>
         </div>
         <div className="pt-[50px] flex flex-col md:flex-row justify-between gap-8 md:gap-8">
           <div className="relative group w-full md:w-auto">

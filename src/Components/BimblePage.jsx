@@ -9,6 +9,7 @@ import colors from "../Assets/Colors.png";
 import typeo from "../Assets/Typography.png";
 import rectangle from "../Assets/Rectangle 65.png";
 import rectangle2 from "../Assets/Rectangle 66.png";
+import { Link } from "react-router-dom";
 
 const BimblePage = () => {
   const [controlsVisible, setControlsVisible] = useState(false);
@@ -120,7 +121,7 @@ const BimblePage = () => {
 
       <div className="md:mt-[50px] flex flex-col w-full mt-[30px] ">
         <div>
-          <h1 className="my-3 ">Logomark</h1>
+          <h1 className="my-3 text-[9px] md:text-[11px ">Logomark</h1>
         </div>
         <img src={logo} alt="" />
         <div className="sm:max-w-[500px]  mt-6 md:mt-3  max-w-[320px] font-thin text-[10px]">
@@ -133,7 +134,7 @@ const BimblePage = () => {
       </div>
       <div className="md:mt-[50px] flex flex-col w-full mt-[30px] ">
         <div>
-          <h1 className="my-3 ">Colors</h1>
+          <h1 className="my-3 text-[9px] md:text-[11px ">Colors</h1>
         </div>
         <img src={colors} alt="" />
         <div className="sm:max-w-[500px]  mt-6 md:mt-3  max-w-[320px] font-thin text-[10px]">
@@ -144,7 +145,7 @@ const BimblePage = () => {
       </div>
       <div className="md:mt-[50px] flex flex-col w-full mt-[30px] ">
         <div>
-          <h1 className="my-3 ">Typeface</h1>
+          <h1 className="my-3 text-[9px] md:text-[11px ">Typeface</h1>
         </div>
         <img src={typeo} alt="" />
       
@@ -179,7 +180,7 @@ const BimblePage = () => {
           </h1>
         </div>
         <div>
-          <h1 className="cursor-pointer">Next Page</h1>
+          <Link to='/nft' className="cursor-pointer">Next Page</Link>
         </div>
       </div>
     </div>
