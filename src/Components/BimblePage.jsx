@@ -121,7 +121,7 @@ const BimblePage = () => {
 
       <div className="md:mt-[50px] flex flex-col w-full mt-[30px] ">
         <div>
-          <h1 className="my-3 text-[9px] md:text-[11px ">Logomark</h1>
+          <h1 className="my-3 text-[9px] md:text-[11px] ">Logomark</h1>
         </div>
         <img src={logo} alt="" />
         <div className="sm:max-w-[500px]  mt-6 md:mt-3  max-w-[320px] font-thin text-[10px]">
@@ -134,7 +134,7 @@ const BimblePage = () => {
       </div>
       <div className="md:mt-[50px] flex flex-col w-full mt-[30px] ">
         <div>
-          <h1 className="my-3 text-[9px] md:text-[11px ">Colors</h1>
+          <h1 className="my-3 text-[9px] md:text-[11px] ">Colors</h1>
         </div>
         <img src={colors} alt="" />
         <div className="sm:max-w-[500px]  mt-6 md:mt-3  max-w-[320px] font-thin text-[10px]">
@@ -145,7 +145,7 @@ const BimblePage = () => {
       </div>
       <div className="md:mt-[50px] flex flex-col w-full mt-[30px] ">
         <div>
-          <h1 className="my-3 text-[9px] md:text-[11px ">Typeface</h1>
+          <h1 className="my-3 text-[9px] md:text-[11px] ">Typeface</h1>
         </div>
         <img src={typeo} alt="" />
       
@@ -175,12 +175,12 @@ const BimblePage = () => {
 
       <div className="my-6 flex justify-between w-full items-center">
         <div>
-          <h1 onClick={scrollToTop} className="cursor-pointer">
+          <h1 onClick={scrollToTop} className="cursor-pointer text-[10px] md:text-[15px]">
             Back to top
           </h1>
         </div>
         <div>
-          <Link to='/nft' className="cursor-pointer">Next Page</Link>
+          <Link to='/nft' className="cursor-pointer text-[10px] md:text-[15px]">Next Page</Link>
         </div>
       </div>
     </div>

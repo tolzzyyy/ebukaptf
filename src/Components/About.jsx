@@ -16,7 +16,7 @@ const About = () => {
             alt="Profile"
           />
         </div>
-        <div className="w-auto xl:w-[740px] lg:w-[600px] 2xl:w-[730px] font-[400] leading-[1.5] text-[8.3px] md:text-[10px] lg:text-[10px] xl:text-[14px] flex flex-col gap-[30px] md:gap-4 xl:gap-4 2xl:gap-8">
+        <div className="w-auto xl:w-[740px]  2xl:w-[730px] font-[400] leading-[1.5] text-[8.3px] md:text-[10px] lg:text-[10px] xl:text-[14px] flex flex-col gap-[30px] md:gap-4 xl:gap-4 2xl:gap-8">
           <h1 className="text-[20px] font-monument-extended font-medium">
             Hi, I’m EBUKA!
           </h1>
