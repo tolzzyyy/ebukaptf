@@ -148,23 +148,26 @@ const BimbleDomain = () => {
       </div>
 
       <div className="md:mt-[50px] w-full mt-[30px] gap-3 flex flex-col">
+      <div>
+          <h1 className="my-3 text-[9px] md:text-[11px] ">Styleframes</h1>
+        </div>
         <div className="w-full">
-          <img src={workflow} alt="" className="w-full rounded-lg" />
+          <img src={workflow} alt="" className="w-full " />
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-3 w-full">
           <div className="w-full">
-            <img src={collab} alt="" className="w-full rounded-lg" />
+            <img src={collab} alt="" className="w-full " />
           </div>
           <div className="w-full">
-            <img src={boxes} alt="" className="w-full rounded-lg" />
+            <img src={boxes} alt="" className="w-full " />
           </div>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-3 w-full">
           <div className="w-full">
-            <img src={rectangle} alt="" className="w-full rounded-lg" />
+            <img src={rectangle} alt="" className="w-full " />
           </div>
           <div className="w-full">
-            <img src={rectangle2} alt="" className="w-full rounded-lg" />
+            <img src={rectangle2} alt="" className="w-full " />
           </div>
         </div>
       </div>

@@ -118,9 +118,7 @@ const Nft = () => {
       </div>
 
       <div className="md:mt-[50px] flex flex-col w-full mt-[30px] ">
-        <div>
-          <h1 className="my-3 text-[9px] md:text-[11px] ">Logomark</h1>
-        </div>
+       
         <img src={web} alt="" />
         <div className="sm:max-w-[500px]  mt-6 md:mt-3  max-w-[320px] font-thin text-[10px]">
         The logo reflects the brand's emphasis on customization and personalization.
@@ -138,23 +136,26 @@ const Nft = () => {
      
 
       <div className="md:mt-[50px] w-full mt-[30px] gap-3 flex flex-col">
+      <div>
+          <h1 className="my-3 text-[9px] md:text-[11px] ">Styleframes</h1>
+        </div>
         <div className="w-full">
-          <img src={rec} alt="" className="w-full rounded-lg" />
+          <img src={rec} alt="" className="w-full " />
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-3 w-full">
           <div className="w-full">
-            <img src={rec2} alt="" className="w-full rounded-lg" />
+            <img src={rec2} alt="" className="w-full " />
           </div>
           <div className="w-full">
-            <img src={rec3} alt="" className="w-full rounded-lg" />
+            <img src={rec3} alt="" className="w-full " />
           </div>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-3 w-full">
           <div className="w-full">
-            <img src={rec4} alt="" className="w-full rounded-lg" />
+            <img src={rec4} alt="" className="w-full" />
           </div>
           <div className="w-full">
-            <img src={rec5} alt="" className="w-full rounded-lg" />
+            <img src={rec5} alt="" className="w-full" />
           </div>
         </div>
       </div>
