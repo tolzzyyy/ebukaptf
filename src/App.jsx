@@ -9,6 +9,7 @@ import PlayGround from './Components/PlayGround';
 import MotionWrapper from './Components/MotionWrapper';
 import BimblePage from './Components/BimblePage';
 import Nft from './Components/Nft';
+import Practice from './Components/Practice';
 import MotionWrapper2 from './Components/MotionWrapper2';
 import BimbleDomain from './Components/BimbleDomain';
 
@@ -26,6 +27,7 @@ const App = () => {
             <Route path='bimble' element={<MotionWrapper><BimblePage /></MotionWrapper>} />
             <Route path='bimbledomain' element={<MotionWrapper><BimbleDomain /></MotionWrapper>} />
             <Route path='/nft' element={<MotionWrapper><Nft /></MotionWrapper>} />
+            <Route path='/practice' element={<Practice/>} />
           </Route>
         </Routes>
       </AnimatePresence>

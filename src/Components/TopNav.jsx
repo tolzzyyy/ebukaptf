@@ -11,7 +11,7 @@ const TopNav = () => {
       if (open) {
         document.body.style.overflow = 'hidden';
         document.body.style.position = 'fixed';
-        document.body.style.width = '';
+        document.body.style.width = '100%'; // Prevent horizontal scroll
       } else {
         document.body.style.overflow = '';
         document.body.style.position = '';
@@ -32,7 +32,7 @@ const TopNav = () => {
     <div className="w-full max-w-[1640px] mx-auto px-[30px] lg:px-[40px] xl:px-[65px]">
       <nav className="flex justify-between items-center">
         <div className="flex items-center w-[232px] mt-4 md:mt-0 ml-[-40px] md:ml-[-20px] gap-2 md:gap-3 justify-center">
-          <NavLink to="/" end className="">
+          <NavLink to="/" end>
             <img className="w-[80px] md:w-[106px]" src={memoji} alt="Memoji" />
           </NavLink>
           <p className="md:text-[12px] text-[9px]">Ebuka Uche</p>
@@ -74,11 +74,16 @@ const TopNav = () => {
         </div>
       </nav>
       <div
-        className={`fixed top-0 flex items-center justify-center lg:hidden left-0 w-full h-screen bg-white z-30 overflow-hidden transition-transform duration-500 transform ${
-          open ? 'translate-y-0 overflow-hidden' : '-translate-y-full overflow-hidden'
+        className={`fixed top-0 lg:hidden left-0 w-full bg-white z-30 transition-all duration-500 ease-in-out ${
+          open ? 'opacity-100 h-screen' : 'opacity-0 h-0'
         }`}
+        style={{
+          transitionProperty: 'opacity, height',
+          height: open ? '100vh' : '0',
+        }}
+        aria-hidden={!open} // Improve accessibility by hiding from screen readers when not open
       >
-        <div className="flex flex-col gap-4 text-[12px] justify-center overflow-hidden items-center p-4 h-full">
+        <div className="flex flex-col gap-4 text-[12px] justify-center items-center p-4 h-full">
           <NavLink
             to="/about"
             className={({ isActive }) =>
