@@ -1,13 +1,13 @@
 import React from "react";
 import Ebuka from "../Assets/Profile Picture.png";
-import { BsBehance, BsLinkedin, BsMailbox, BsTwitter } from "react-icons/bs";
+import { BsBehance } from "react-icons/bs";
+import { FaTwitter } from "react-icons/fa";
 import { LiaLinkedin } from "react-icons/lia";
 import { CgMail } from "react-icons/cg";
-import { FaTwitter } from "react-icons/fa";
 
 const About = () => {
   return (
-    <div className="px-[30px] max-w-[1640px] mx-auto lg:px-[40px] xl:px-[65px] 2xl:px-[100px] about flex flex-col justify-center my-[20px] xl:my-[20px] items-center min-h-[400px] xl:h-[100vh]">
+    <div className="px-[30px] max-w-[1740px] mx-auto lg:px-[40px] xl:px-[65px] 2xl:px-[100px] about flex flex-col justify-center my-[20px] xl:my-[20px] items-center min-h-[400px] xl:h-[100vh]">
       <div className="flex flex-col lg:flex-row items-center w-full lg:justify-between gap-[40px] md:gap-8">
         <div className="flex-shrink-0 w-auto lg:w-[400px] xl:w-[470px] 2xl:w-[550px]">
           <img
@@ -16,7 +16,7 @@ const About = () => {
             alt="Profile"
           />
         </div>
-        <div className="w-auto xl:w-[740px]  2xl:w-[730px] font-[400] leading-[1.5] text-[8.3px] md:text-[10px] lg:text-[10px] xl:text-[14px] flex flex-col gap-[30px] md:gap-4 xl:gap-4 2xl:gap-8">
+        <div className="w-auto xl:w-[740px] 2xl:w-[730px] 3xl:w-[800px] font-[400] leading-[1.5] text-[8.3px] md:text-[10px] lg:text-[10px] xl:text-[14px] flex flex-col gap-[30px] md:gap-4 xl:gap-4 2xl:gap-8">
           <h1 className="text-[20px] font-monument-extended font-medium">
             Hi, I’m EBUKA!
           </h1>

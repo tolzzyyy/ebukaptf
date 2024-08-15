@@ -29,7 +29,7 @@ const TopNav = () => {
   }, [open]);
 
   return (
-    <div className="w-full max-w-[1640px] mx-auto px-[30px] lg:px-[40px] xl:px-[65px]">
+    <div className="w-full max-w-[1740px] mx-auto px-[30px] 2xl:px-[100px]  lg:px-[40px] xl:px-[65px]">
       <nav className="flex justify-between items-center">
         <div className="flex items-center w-[232px] mt-4 md:mt-0 ml-[-40px] md:ml-[-20px] gap-2 md:gap-3 justify-center">
           <NavLink to="/" end>

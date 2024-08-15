@@ -17,7 +17,7 @@ const Body = () => {
   
     <div>
         {/* <SpotifyTopTracks/> */}
-      <div className='max-w-[1640px] h-full font-monument-extended mt-[20px] md:mt-[100px] mx-auto p-4 px-[30px] lg:px-[40px] xl:px-[65px]'>
+      <div className='max-w-[1740px] h-full font-monument-extended mt-[20px] md:mt-[100px] mx-auto p-4 px-[30px] lg:px-[40px] xl:px-[65px]'>
         <div className='relative'>
           <Swiper
             onSlideChange={(swiper) => handleSlideChange(swiper)}

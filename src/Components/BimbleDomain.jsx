@@ -79,7 +79,7 @@ const BimbleDomain = () => {
   };
 
   return (
-    <div className="max-w-[1640px] h-full font-monument-extended my-[20px] mx-auto p-4 px-[30px] lg:px-[40px] xl:px-[65px] flex flex-col items-center justify-center">
+    <div className="max-w-[1740px] h-full font-monument-extended my-[20px] mx-auto p-4 px-[30px] lg:px-[40px] xl:px-[65px] flex flex-col items-center justify-center">
       <div className="relative w-full">
         <video
           ref={videoRef}

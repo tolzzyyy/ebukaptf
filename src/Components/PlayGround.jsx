@@ -10,7 +10,7 @@ import black from '../Assets/black.png'
 
 const PlayGround = () => {
   return (
-    <div className='max-w-[1640px] h-full font-monument-extended mt-[20px] md:mt-[50px] mx-auto p-4 px-[30px] lg:px-[40px] xl:px-[65px]'>
+    <div className='max-w-[1740px] h-full font-monument-extended mt-[20px] md:mt-[50px] mx-auto p-4 px-[30px] lg:px-[40px] xl:px-[65px]'>
 <div className='mx-auto flex flex-col gap-2 text-center'>
   <h1>Pixel Pushing</h1>
   <p className='text-[10px] font-extra-light text-[#1A1A1A]'>Interaction design, Motion design, 3D comps, user interfaces and sketches. Last Updated - July 2024</p>
