@@ -46,7 +46,7 @@ const ProjectPage = () => {
           </Link>
 
           {/* Card 3 */}
-          <div className="relative group">
+          <Link to='/bimble2' className="relative group">
             <div className="relative">
               <div className="absolute top-0 h-full bg-blue-500 transition-all duration-700 ease-in-out w-0 group-hover:w-[20px]"></div>
               <img src={brimble2} className="w-full h-auto" alt="" />
@@ -57,7 +57,19 @@ const ProjectPage = () => {
               </h1>
               <p className="text-[#737373] text-[9px] lg:text-[12px]">Motion design and Illustration</p>
             </div>
-          </div>
+          </Link>
+          <Link to="/bimbledomain" className="relative group">
+            <div className="relative">
+              <div className="absolute top-0 h-full bg-blue-500 transition-all duration-700 ease-in-out w-0 group-hover:w-[20px]"></div>
+              <img src={bdomain} className="w-full h-auto" alt="" />
+            </div>
+            <div className="flex flex-col mt-3">
+              <h1 className="transition-all duration-700 text-[13px] lg:text-[9px] xl:text-[21px] ease-in-out group-hover:text-blue-500">
+                Brimble Domains
+              </h1>
+              <p className="text-[#737373] text-[9px] lg:text-[12px]">Motion design and art direction</p>
+            </div>
+          </Link>
 
           {/* Card 4 */}
           <div className="relative group">
@@ -74,7 +86,7 @@ const ProjectPage = () => {
           </div>
 
           {/* Card 5 */}
-          <Link to="/bimbledomain" className="relative group">
+          {/* <Link to="/bimbledomain" className="relative group">
             <div className="relative">
               <div className="absolute top-0 h-full bg-blue-500 transition-all duration-700 ease-in-out w-0 group-hover:w-[20px]"></div>
               <img src={bdomain} className="w-full h-auto" alt="" />
@@ -85,7 +97,7 @@ const ProjectPage = () => {
               </h1>
               <p className="text-[#737373] text-[9px] lg:text-[12px]">Motion design and art direction</p>
             </div>
-          </Link>
+          </Link> */}
 
           {/* Card 6 */}
           <div className="relative group">

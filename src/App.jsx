@@ -12,6 +12,7 @@ import Nft from './Components/Nft';
 import Practice from './Components/Practice';
 import MotionWrapper2 from './Components/MotionWrapper2';
 import BimbleDomain from './Components/BimbleDomain';
+import BimbleWelcome from './Components/BimbleWelcome';
 
 const App = () => {
   const location = useLocation();
@@ -27,7 +28,7 @@ const App = () => {
             <Route path='bimble' element={<MotionWrapper><BimblePage /></MotionWrapper>} />
             <Route path='bimbledomain' element={<MotionWrapper><BimbleDomain /></MotionWrapper>} />
             <Route path='/nft' element={<MotionWrapper><Nft /></MotionWrapper>} />
-            <Route path='/practice' element={<Practice/>} />
+            <Route path='/bimble2' element={<BimbleWelcome/>} />
           </Route>
         </Routes>
       </AnimatePresence>
