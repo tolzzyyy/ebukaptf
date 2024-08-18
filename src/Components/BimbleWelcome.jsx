@@ -180,7 +180,7 @@ const BimbleWelcome = () => {
         <div>
           <h1
             onClick={scrollToTop}
-            className="cursor-pointer text-[10px] hover:text-blue-500 md:text-[15px]"
+            className="cursor-pointer text-[10px] hover:text-blue-500 transition-all duration-700 md:text-[15px]"
           >
             Back to top
           </h1>
@@ -188,7 +188,7 @@ const BimbleWelcome = () => {
         <div>
           <Link
             to="/bimbledomain"
-            className="cursor-pointer hover:text-blue-500 text-[10px] md:text-[15px]"
+            className="cursor-pointer hover:text-blue-500 transition-all duration-700 text-[10px] md:text-[15px]"
           >
             Next Page
           </Link>

@@ -1,18 +1,11 @@
-import React, { useEffect, useRef } from 'react';
-import { useLocation } from 'react-router-dom';
+import React, { useEffect } from 'react';
 import { motion } from 'framer-motion';
 
 const MotionWrapper = ({ children }) => {
-  const location = useLocation();
-  const hasScrolled = useRef(false);
-
   useEffect(() => {
-    if (!hasScrolled.current) {
-      // Scroll to top only on initial mount or first page load
-      window.scrollTo(0, 0);
-      hasScrolled.current = true;
-    }
-  }, [location]);
+    // Scroll to the top-left of the page when the component first mounts or on page reload
+    window.scrollTo(0, 0);
+  }, []); // Empty dependency array ensures this only runs once when the component mounts
 
   const pageVariants = {
     initial: {

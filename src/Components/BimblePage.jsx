@@ -174,12 +174,12 @@ const BimblePage = () => {
 
       <div className="my-6 flex justify-between w-full items-center">
         <div>
-          <h1 onClick={scrollToTop} className="cursor-pointer hover:text-blue-500 text-[10px] md:text-[15px]">
+          <h1 onClick={scrollToTop} className="cursor-pointer hover:text-blue-500 transition-all duration-700 text-[10px] md:text-[15px]">
             Back to top
           </h1>
         </div>
         <div>
-          <Link to='/nft' className="cursor-pointer hover:text-blue-500 text-[10px] md:text-[15px]">Next Page</Link>
+          <Link to='/nft' className="cursor-pointer hover:text-blue-500 transition-all duration-700 text-[10px] md:text-[15px]">Next Page</Link>
         </div>
       </div>
     </div>
