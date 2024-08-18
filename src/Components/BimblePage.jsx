@@ -4,7 +4,7 @@ import video from "../Assets/BrimbleBeta.mp4";
 import workflow from "../Assets/workflow.png";
 import collab from "../Assets/collaboration.png";
 import boxes from "../Assets/boxes.png";
-import logo from "../Assets/Logomark.png";
+import logo from "../Assets/ghggg.gif";
 import colors from "../Assets/Colors.png";
 import typeo from "../Assets/Typography.png";
 import rectangle from "../Assets/Rectangle 65.png";

@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import nft from "../Assets/Nft1.png";
-import web from "../Assets/web3.png";
+import web from "../Assets/nfttt.gif";
 import video from "../Assets/NFT ng.mp4";
 import color from '../Assets/Colors (1).png'
 import rec from '../Assets/Rectangle 74.png'
@@ -118,6 +118,7 @@ const Nft = () => {
       </div>
 
       <div className="md:mt-[50px] flex flex-col w-full mt-[30px] ">
+      <h1 className="my-3 text-[9px] md:text-[11px] ">Logomark</h1>
        
         <img src={web} alt="" />
         <div className="sm:max-w-[500px]  mt-6 md:mt-3  max-w-[320px] font-thin text-[10px]">

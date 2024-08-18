@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
-import logo from '../Assets/Rectangle 67 (1).png'
+import logo from '../Assets/ghggg.gif'
 import colors from '../Assets/Colors (2).png'
 import typeo from '../Assets/Typography (1).png'
 import workflow from '../Assets/Rectangle 74 (1).png'

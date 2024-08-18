@@ -5,7 +5,7 @@ import poster from "../Assets/Rectangle 48 (2).png";
 import workflow from "../Assets/Rectangle 74 (2).png";
 import collab from "../Assets/Rectangle 65 (3).png";
 import boxes from "../Assets/Rectangle 66 (3).png";
-import logo from "../Assets/Rectangle 67 (2).png";
+import logo from "../Assets/bimbleee2.gif";
 import colors from "../Assets/Colors (3).png";
 import typeo from "../Assets/Typography.png";
 import rectangle from "../Assets/Rectangle 42 (1).png";
