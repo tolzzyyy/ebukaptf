@@ -80,28 +80,19 @@ const BimbleWelcome = () => {
   };
 
   return (
-    <div className="max-w-[1740px] h-full font-monument-extended my-[20px] mx-auto p-4 px-[30px] lg:px-[40px] xl:px-[65px] flex flex-col items-center justify-center">
-      <div className="relative w-full">
-        <video
-          ref={videoRef}
-          className="w-full rounded-lg"
-          poster={poster}
-          controls={controlsVisible}
-          controlsList="nodownload"
-          style={{ cursor: "pointer" }}
-        >
-          <source src={video} type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
-        {!isPlaying && (
-          <button
-            onClick={handlePlayPause}
-            className="absolute inset-0 flex items-center justify-center text-[30px] md:text-[100px] bg-black bg-opacity-20 text-white"
-          >
-            ▶
-          </button>
-        )}
+    <div className="max-w-[1740px] h-full font-monument-extended my-[20px] mx-auto p-4 px-[30px] 2xl:px-[100px]  lg:px-[40px] xl:px-[65px] flex flex-col items-center justify-center">
+    <div className="relative w-full" style={{ paddingBottom: '56.25%' }}>
+
+        <iframe
+          src="https://player.vimeo.com/video/1000157668?h=b6783f0a33"
+        className="absolute top-0 left-0 w-full h-full p-0 m-0"
+          frameborder="0"
+          allow="autoplay; fullscreen; picture-in-picture"
+          allowfullscreen
+        ></iframe>
       </div>
+      <script src="https://player.vimeo.com/api/player.js"></script>
+     
       <div className="md:flex w-full grid grid-cols-1 gap-4 md:gap-0 justify-start md:justify-between mt-6 md:mt-3">
         <div className="flex flex-col w-full">
           <h1 className="text-[13px] lg:text-[9px] xl:text-[21px]">

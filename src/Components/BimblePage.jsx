@@ -74,33 +74,23 @@ const BimblePage = () => {
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
-      behavior: "smooth"
+      behavior: "smooth",
     });
   };
 
   return (
-    <div className="max-w-[1740px] h-full font-monument-extended my-[20px] mx-auto p-4 px-[30px] lg:px-[40px] xl:px-[65px] flex flex-col items-center justify-center">
-      <div className="relative w-full">
-        <video
-          ref={videoRef}
-          className="w-full rounded-lg"
-          poster={poster}
-          controls={controlsVisible}
-          controlsList="nodownload"
-          style={{ cursor: "pointer" }}
-        >
-          <source src={video} type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
-        {!isPlaying && (
-          <button
-            onClick={handlePlayPause}
-            className="absolute inset-0 flex items-center justify-center text-[30px] md:text-[100px] bg-black bg-opacity-20 text-white"
-          >
-            ▶
-          </button>
-        )}
+    <div className="max-w-[1740px] h-full font-monument-extended my-[20px] mx-auto p-4 px-[30px] 2xl:px-[100px]  lg:px-[40px] xl:px-[65px] flex flex-col items-center justify-center">
+    <div className="relative w-full" style={{ paddingBottom: '56.25%' }}>
+        <iframe
+          src="https://player.vimeo.com/video/1000084251?h=ff5f0461fa"
+       className="absolute top-0 left-0 w-full h-full p-0 m-0"
+          frameborder="0"
+          allow="autoplay; fullscreen; picture-in-picture"
+          allowfullscreen
+        ></iframe>
       </div>
+      <script src="https://player.vimeo.com/api/player.js"></script>
+    
       <div className="md:flex w-full grid grid-cols-1 gap-4 md:gap-0 justify-start md:justify-between mt-6 md:mt-3">
         <div className="flex flex-col w-full">
           <h1 className="text-[13px] lg:text-[9px] xl:text-[21px]">
@@ -125,7 +115,9 @@ const BimblePage = () => {
         </div>
         <img src={logo} alt="" />
         <div className="sm:max-w-[500px]  mt-6 md:mt-3  max-w-[320px] font-thin text-[10px]">
-        The logo features a streamlined and modern aesthetic, incorporating a stylized ampersand (&) that ingeniously embodies the concepts of connectivity and integration, a key aspects of the company's services.
+          The logo features a streamlined and modern aesthetic, incorporating a
+          stylized ampersand (&) that ingeniously embodies the concepts of
+          connectivity and integration, a key aspects of the company's services.
         </div>
       </div>
       <div className="md:mt-[50px] flex flex-col w-full mt-[30px] ">
@@ -144,11 +136,10 @@ const BimblePage = () => {
           <h1 className="my-3 text-[9px] md:text-[11px] ">Typeface</h1>
         </div>
         <img src={typeo} alt="" />
-      
       </div>
 
       <div className="md:mt-[50px] w-full mt-[30px] gap-3 flex flex-col">
-      <div>
+        <div>
           <h1 className="my-3 text-[9px] md:text-[11px] ">Styleframes</h1>
         </div>
         <div className="w-full">
@@ -174,12 +165,20 @@ const BimblePage = () => {
 
       <div className="my-6 flex justify-between w-full items-center">
         <div>
-          <h1 onClick={scrollToTop} className="cursor-pointer hover:text-blue-500 transition-all duration-700 text-[10px] md:text-[15px]">
+          <h1
+            onClick={scrollToTop}
+            className="cursor-pointer hover:text-blue-500 transition-all duration-700 text-[10px] md:text-[15px]"
+          >
             Back to top
           </h1>
         </div>
         <div>
-          <Link to='/nft' className="cursor-pointer hover:text-blue-500 transition-all duration-700 text-[10px] md:text-[15px]">Next Page</Link>
+          <Link
+            to="/nft"
+            className="cursor-pointer hover:text-blue-500 transition-all duration-700 text-[10px] md:text-[15px]"
+          >
+            Next Page
+          </Link>
         </div>
       </div>
     </div>
