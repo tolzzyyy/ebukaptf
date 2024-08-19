@@ -25,7 +25,7 @@ const ProjectPage = () => {
             </div>
             <div className="flex flex-col mt-3">
               <h1 className="transition-all duration-700 text-[13px] lg:text-[9px] xl:text-[21px] ease-in-out group-hover:text-blue-500">
-                Brimble Beta Launch
+                Brimble Public Beta
               </h1>
               <p className="text-[#737373] text-[9px] lg:text-[12px]">Identity and motion design</p>
             </div>
@@ -53,7 +53,7 @@ const ProjectPage = () => {
             </div>
             <div className="flex flex-col mt-3">
               <h1 className="transition-all duration-700 text-[13px] lg:text-[9px] xl:text-[21px] ease-in-out group-hover:text-blue-500">
-                Welcome To Brimble
+                 Brimble Teaser
               </h1>
               <p className="text-[#737373] text-[9px] lg:text-[12px]">Motion design and Illustration</p>
             </div>

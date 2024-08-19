@@ -96,7 +96,7 @@ const BimbleWelcome = () => {
       <div className="md:flex w-full grid grid-cols-1 gap-4 md:gap-0 justify-start md:justify-between mt-6 md:mt-3">
         <div className="flex flex-col w-full">
           <h1 className="text-[13px] lg:text-[9px] xl:text-[21px]">
-            Brimble Beta Launch
+            Brimble Teaser
           </h1>
           <p className="text-[#737373] text-[9px] lg:text-[12px]">
             Identity and motion design
