@@ -15,9 +15,9 @@ import { Link } from "react-router-dom";
 const ProjectPage = () => {
   return (
     <div className="w-full mt-[20px] max-w-[1740px] mx-auto px-[30px] lg:px-[40px] xl:px-[65px] h-full border-t-[1px]">
-      <div className="flex flex-col">
+      <div className="flex flex-col gap-4 ">
         {/* Main Grid Container */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-8 mt-[30px] md:mt-[80px]">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-[50px] mt-[30px] md:mt-[80px]">
           {/* Card 1 */}
           <Link to="/bimble" className="relative group">
             <div className="relative">
@@ -128,21 +128,22 @@ const ProjectPage = () => {
         </div>
 
         {/* Social Media Links */}
-        <div className="flex flex-col items-center my-[60px] justify-center">
+        <div className="flex flex-col items-center my-[30px] justify-center">
           <div className="flex items-center gap-3">
             <a href="https://www.behance.net/ebukauche1" target="_blank" rel="noopener noreferrer">
-              <BsBehance size={26} />
+              <BsBehance size={20} />
             </a>
             <a href="https://www.linkedin.com/in/ebukau?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank" rel="noopener noreferrer">
-              <LiaLinkedin size={26} />
+              <LiaLinkedin size={20} />
             </a>
             <a href="https://x.com/t0_ge_?s=21" target="_blank" rel="noopener noreferrer">
-              <FaTwitter size={26} />
+              <FaTwitter size={20} />
             </a>
             <a href="mailto:Eburogersuche@yahoo.com">
-              <CgMail size={26} />
+              <CgMail size={20} />
             </a>
           </div>
+          <p className="md:text-[11px] text-[9px] mt-2 font-thin">©2024 Ebuka. All rights reserved.</p>
         </div>
       </div>
     </div>
