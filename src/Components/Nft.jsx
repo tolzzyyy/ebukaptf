@@ -14,6 +14,8 @@ const Nft = () => {
   const [controlsVisible, setControlsVisible] = useState(false);
   const [isPlaying, setIsPlaying] = useState(false);
   const videoRef = useRef(null);
+  const cursorRef = useRef(null);
+  const [isHovering, setIsHovering] = useState(false);
 
   const handlePlayPause = () => {
     const videoElement = videoRef.current;
@@ -69,7 +71,20 @@ const Nft = () => {
     };
   }, []);
 
-  // Scroll to top function
+  useEffect(() => {
+    const moveCursor = (e) => {
+      if (cursorRef.current) {
+        cursorRef.current.style.transform = `translate(${e.clientX}px, ${e.clientY}px)`;
+      }
+    };
+
+    window.addEventListener("mousemove", moveCursor);
+
+    return () => {
+      window.removeEventListener("mousemove", moveCursor);
+    };
+  }, []);
+
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
@@ -78,18 +93,17 @@ const Nft = () => {
   };
 
   return (
-    <div className="max-w-[1740px] h-full font-monument-extended my-[20px] 2xl:px-[100px]  mx-auto p-4 px-[30px] lg:px-[40px] xl:px-[65px] flex flex-col items-center justify-center">
-   <div className="relative w-full" style={{ paddingBottom: '56.25%' }}>
+    <div className="max-w-[1740px] h-full font-monument-extended my-[20px] 2xl:px-[100px] mx-auto p-4 px-[30px] lg:px-[40px] xl:px-[65px] flex flex-col items-center justify-center">
+      <div className="relative w-full" style={{ paddingBottom: '56.25%' }}>
         <iframe
           src="https://player.vimeo.com/video/886521904?h=f75fc025e5"
-        className="absolute top-0 left-0 w-full h-full p-0 m-0"
-          frameborder="0"
+          className="absolute top-0 left-0 w-full h-full p-0 m-0"
+          frameBorder="0"
           allow="autoplay; fullscreen; picture-in-picture"
-          allowfullscreen
+          allowFullScreen
         ></iframe>
       </div>
-      <script src="https://player.vimeo.com/api/player.js"></script>
-     
+      
       <div className="md:flex w-full grid grid-cols-1 gap-4 md:gap-0 justify-start md:justify-between mt-6 md:mt-3">
         <div className="flex flex-col w-full">
           <h1 className="text-[13px] lg:text-[9px] xl:text-[21px]">NFT ng</h1>
@@ -108,9 +122,8 @@ const Nft = () => {
       </div>
       <div className="md:mt-[50px] flex flex-col w-full mt-[30px] ">
         <h1 className="my-3 text-[9px] md:text-[11px] ">Logomark</h1>
-
         <img src={web} alt="" />
-        <div className="sm:max-w-[500px]  mt-6 md:mt-3  max-w-[320px] font-thin text-[10px]">
+        <div className="sm:max-w-[500px] mt-6 md:mt-3 max-w-[320px] font-thin text-[10px]">
           The logo reflects the brand's emphasis on customization and
           personalization.
         </div>
@@ -120,7 +133,7 @@ const Nft = () => {
           <h1 className="my-3 text-[9px] md:text-[11px] ">Colors</h1>
         </div>
         <img src={color} alt="" />
-        <div className="sm:max-w-[500px]  mt-6 md:mt-3  max-w-[320px] font-thin text-[10px]">
+        <div className="sm:max-w-[500px] mt-6 md:mt-3 max-w-[320px] font-thin text-[10px]">
           The split-complimentary color scheme emphasizes the sense of progress,
         </div>
       </div>
@@ -166,6 +179,8 @@ const Nft = () => {
           </Link>
         </div>
       </div>
+
+     
     </div>
   );
 };

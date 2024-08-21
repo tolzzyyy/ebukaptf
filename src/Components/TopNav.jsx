@@ -69,7 +69,7 @@ const TopNav = () => {
           {open ? (
             <FaTimes className="z-50 fixed right-[30px] top-[40px] text-black" size={24} />
           ) : (
-            <FaBars size={24} />
+            <FaBars size={24} className='fixed right-[30px]  top-[40px]' />
           )}
         </div>
       </nav>

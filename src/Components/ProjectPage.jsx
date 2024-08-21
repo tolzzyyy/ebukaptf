@@ -7,10 +7,11 @@ import tola from '../Assets/Rectangle 60.png'
 import bdomain from "../Assets/bdomain.png";
 import oxellus from "../Assets/oxellus.png";
 import { BsBehance } from "react-icons/bs";
-import { FaTwitter } from "react-icons/fa";
+import { FaBehance, FaLinkedinIn, FaTwitter } from "react-icons/fa";
 import { CgMail } from "react-icons/cg";
 import { LiaLinkedin } from "react-icons/lia";
 import { Link } from "react-router-dom";
+import { IoMail } from "react-icons/io5";
 
 const ProjectPage = () => {
   return (
@@ -131,16 +132,16 @@ const ProjectPage = () => {
         <div className="flex flex-col items-center my-[30px] justify-center">
           <div className="flex items-center gap-3">
             <a href="https://www.behance.net/ebukauche1" target="_blank" rel="noopener noreferrer">
-              <BsBehance size={20} />
+              <FaBehance size={20} />
             </a>
             <a href="https://www.linkedin.com/in/ebukau?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank" rel="noopener noreferrer">
-              <LiaLinkedin size={20} />
+              <FaLinkedinIn size={20} />
             </a>
             <a href="https://x.com/t0_ge_?s=21" target="_blank" rel="noopener noreferrer">
               <FaTwitter size={20} />
             </a>
             <a href="mailto:Eburogersuche@yahoo.com">
-              <CgMail size={20} />
+              <IoMail size={20} />
             </a>
           </div>
           <p className="md:text-[11px] text-[9px] mt-2 font-thin">©2024 Ebuka. All rights reserved.</p>

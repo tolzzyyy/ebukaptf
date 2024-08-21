@@ -3,6 +3,40 @@
 @tailwind utilities;
 
 
+/* Default Cursor Styling */
+.cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9999;
+  mix-blend-mode: difference;
+  background-color: white; /* Default to white */
+  transition: width 0.3s, height 0.3s, background-color 0.3s, transform 0.1s ease;
+  transform: translate(-50%, -50%);
+}
+
+.cursor.biggerCursor {
+  width: 70px;
+  height: 70px;
+}
+
+/* Ensure proper stacking context */
+body, html {
+  background-color: white; /* or the desired color */
+  position: relative;
+  z-index: 0;
+}
+
+.getHover {
+  background-color: black; /* Example: Make the element's background black */
+}
+
+
+
 
 
 

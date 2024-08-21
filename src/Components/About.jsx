@@ -3,7 +3,8 @@ import Ebuka from "../Assets/Profile Picture.png";
 import { BsBehance, BsLinkedin, BsMailbox, BsTwitter } from "react-icons/bs";
 import { LiaLinkedin } from "react-icons/lia";
 import { CgMail } from "react-icons/cg";
-import { FaTwitter } from "react-icons/fa";
+import { FaBehance, FaLinkedinIn, FaTwitter } from "react-icons/fa";
+import { IoMail } from "react-icons/io5";
 
 const About = () => {
   return (
@@ -59,14 +60,14 @@ const About = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <BsBehance size={26} className="text-blue-500" />
+                <FaBehance size={26} className="text-blue-500" />
               </a>
               <a
                 href="https://www.linkedin.com/in/ebukau?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <LiaLinkedin size={26} className="text-blue-500" />
+                <FaLinkedinIn size={24} className="text-blue-500" />
               </a>
               <a
                 href="https://x.com/t0_ge_?s=21"
@@ -76,7 +77,7 @@ const About = () => {
                 <FaTwitter size={24} className="text-blue-500" />
               </a>
               <a href="mailto:Eburogersuche@yahoo.com">
-                <CgMail size={26} className="text-blue-500" />
+                <IoMail size={24} className="text-blue-500" />
               </a>
             </div>
           </div>
