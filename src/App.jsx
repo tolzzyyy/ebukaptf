@@ -24,7 +24,7 @@ const App = () => {
     let mouseY = 0;
     let cursorX = 0;
     let cursorY = 0;
-    const delay = 0.15; // Adjust delay to control cursor smoothness
+    const delay = 0.9; // Adjust delay to control cursor smoothness
 
     const moveCursor = (e) => {
       mouseX = e.clientX;
@@ -63,7 +63,7 @@ const App = () => {
       {/* Custom Cursor */}
       <div
         ref={cursorRef}
-        className={`cursor fixed top-0 left-0 w-5 h-5 pointer-events-none duration-300 rounded-full z-50 ${
+        className={`cursor fixed hidden xl:flex top-0 left-0 w-5 h-5 pointer-events-none duration-300 rounded-full z-50 ${
           isHovering ? 'biggerCursor' : ''
         }`}
         style={{
