@@ -112,7 +112,7 @@ const App = () => {
   }
 
   return (
-    <div className="font-monument-extended min-h-[100vh] relative">
+    <div className="font-monument-extended  relative">
       {/* Custom Cursor */}
       <div
         ref={cursorRef}
