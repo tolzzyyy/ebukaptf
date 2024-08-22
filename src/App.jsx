@@ -98,7 +98,7 @@ const App = () => {
       {/* Custom Cursor */}
       <div
         ref={cursorRef}
-        className={`cursor fixed top-0 left-0 w-[5px] h-[5px] pointer-events-none duration-300 rounded-full z-50 ${
+        className={`cursor fixed hidden xl:flex top-0 left-0 w-[5px] h-[5px] pointer-events-none duration-300 rounded-full z-50 ${
           isMouseMoving ? 'block' : 'hidden'
         } ${isHovering ? 'biggerCursor' : ''}`}
         style={{
