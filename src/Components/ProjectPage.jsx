@@ -1,19 +1,30 @@
-import React from "react";
+import React, { useEffect } from "react";
 import guardians from "../Assets/guardians.png";
 import brimble from "../Assets/brimble.png";
 import brimble2 from "../Assets/brimble2.png";
 import nft from "../Assets/nft.png";
 import tola from '../Assets/Rectangle 60.png'
 import bdomain from "../Assets/bdomain.png";
-import oxellus from "../Assets/oxellus.png";
+import oxellus from "../Assets/Rectangle 58.png";
+import secondimage from "../Assets/Rectangle 58 (1).png"
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/effect-fade';
 import { BsBehance } from "react-icons/bs";
 import { FaBehance, FaLinkedinIn, FaTwitter } from "react-icons/fa";
 import { CgMail } from "react-icons/cg";
 import { LiaLinkedin } from "react-icons/lia";
 import { Link } from "react-router-dom";
 import { IoMail } from "react-icons/io5";
+import axios from "axios";
+import { Autoplay, EffectFade, FreeMode } from "swiper/modules";
+
+
+
 
 const ProjectPage = () => {
+
+
   return (
     <div className="w-full mt-[20px] max-w-[1740px] mx-auto px-[30px] lg:px-[40px] xl:px-[65px] h-full border-t-[1px]">
       <div className="flex flex-col gap-4 ">
@@ -112,20 +123,45 @@ const ProjectPage = () => {
               <p className="text-[#737373] text-[9px] lg:text-[12px]">Motion design and art direction</p>
             </div>
           </Link> */}
-
-          {/* Card 6 */}
+    <Link to='/discord' className="relative group">
+      {/* Swiper for the images with hover effect */}
+      <Swiper
+        modules={[Autoplay, EffectFade]}
+        effect="fade"
+        loop={true}
+        autoplay={{
+          delay: 2500, // Time before switching images (in ms)
+          disableOnInteraction: false,
+        }}
+        speed={1500} // Speed of the fade transition
+        fadeEffect={{ crossFade: true }} // Smoothens the fade effect
+        className="relative"
+      >
+        <SwiperSlide>
           <div className="relative group">
-            <div className="relative">
-              <div className="absolute top-0 h-full bg-blue-500 transition-all duration-700 ease-in-out w-0 group-hover:w-[20px]"></div>
-              <img src={oxellus} className="w-full h-auto" alt="" />
-            </div>
-            <div className="flex flex-col mt-3">
-              <h1 className="transition-all duration-700 text-[13px] lg:text-[9px] xl:text-[21px] ease-in-out group-hover:text-blue-500">
-                Guild of Guardians Static
-              </h1>
-              <p className="text-[#737373] text-[9px] lg:text-[12px]">Identity and motion design</p>
-            </div>
+            <img src={oxellus} className="w-full h-auto" alt="First Image" />
+            <div className="absolute top-0 left-0 h-full bg-blue-500 transition-all duration-700 ease-in-out w-0 group-hover:w-[20px]"></div>
           </div>
+        </SwiperSlide>
+
+        <SwiperSlide>
+          <div className="relative group">
+            <img src={secondimage} className="w-full h-auto" alt="Second Image" />
+            <div className="absolute top-0 left-0 h-full bg-blue-500 transition-all duration-700 ease-in-out w-0 group-hover:w-[20px]"></div>
+          </div>
+        </SwiperSlide>
+      </Swiper>
+
+      {/* Static text */}
+      <div className="flex flex-col mt-3">
+        <h1 className="text-[13px] lg:text-[9px] transition-all duration-700 xl:text-[21px] ease-in-out group-hover:text-blue-500">
+          NFT ng Graphics
+        </h1>
+        <p className="text-[#737373] text-[9px] lg:text-[12px]">
+          Graphic and Visual Design
+        </p>
+      </div>
+    </Link>
         </div>
 
         {/* Social Media Links */}

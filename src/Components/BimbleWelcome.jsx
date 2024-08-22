@@ -11,6 +11,8 @@ import typeo from "../Assets/Typography.png";
 import rectangle from "../Assets/Rectangle 42 (1).png";
 import rectangle2 from "../Assets/Rectangle 53 (2).png";
 import { Link } from "react-router-dom";
+import { FaBehance, FaLinkedinIn, FaTwitter } from "react-icons/fa";
+import { IoMail } from "react-icons/io5";
 
 const BimbleWelcome = () => {
   const [controlsVisible, setControlsVisible] = useState(false);
@@ -185,6 +187,23 @@ const BimbleWelcome = () => {
           </Link>
         </div>
       </div>
+      <div className="flex flex-col items-center my-[30px] justify-center">
+          <div className="flex items-center gap-3">
+            <a href="https://www.behance.net/ebukauche1" target="_blank" rel="noopener noreferrer">
+              <FaBehance size={20} />
+            </a>
+            <a href="https://www.linkedin.com/in/ebukau?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank" rel="noopener noreferrer">
+              <FaLinkedinIn size={20} />
+            </a>
+            <a href="https://x.com/t0_ge_?s=21" target="_blank" rel="noopener noreferrer">
+              <FaTwitter size={20} />
+            </a>
+            <a href="mailto:Eburogersuche@yahoo.com">
+              <IoMail size={20} />
+            </a>
+          </div>
+          <p className="md:text-[11px] text-[9px] mt-2 font-thin">©2024 Ebuka. All rights reserved.</p>
+        </div>
     </div>
   );
 };

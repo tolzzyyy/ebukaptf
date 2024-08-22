@@ -12,6 +12,7 @@ import Practice from './Components/Practice';
 import MotionWrapper2 from './Components/MotionWrapper2';
 import BimbleDomain from './Components/BimbleDomain';
 import BimbleWelcome from './Components/BimbleWelcome';
+import Discord from './Components/Discord';
 
 const App = () => {
   const location = useLocation();
@@ -59,11 +60,11 @@ const App = () => {
   }, []);
 
   return (
-    <div className="font-monument-extended">
+    <div className="font-monument-extended min-h-[100vh] relative">
       {/* Custom Cursor */}
       <div
         ref={cursorRef}
-        className={`cursor fixed hidden xl:flex top-0 left-0 w-5 h-5 pointer-events-none duration-300 rounded-full z-50 ${
+        className={`cursor fixed hidden xl:flex top-0 left-0 w-[5px] h-[5px] pointer-events-none duration-300 rounded-full z-50 ${
           isHovering ? 'biggerCursor' : ''
         }`}
         style={{
@@ -83,6 +84,7 @@ const App = () => {
             <Route path="/bimbledomain" element={<MotionWrapper><BimbleDomain /></MotionWrapper>} />
             <Route path="nft" element={<MotionWrapper><Nft /></MotionWrapper>} />
             <Route path="/bimble2" element={<BimbleWelcome />} />
+            <Route path="/discord" element={<Discord />} />
           </Route>
         </Routes>
       </AnimatePresence>
