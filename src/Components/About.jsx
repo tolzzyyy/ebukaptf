@@ -8,7 +8,7 @@ import { IoMail } from "react-icons/io5";
 
 const About = () => {
   return (
-    <div className="px-[30px] max-w-[1640px] mx-auto lg:px-[40px] xl:px-[65px] 2xl:px-[100px] about flex flex-col justify-center my-[20px] xl:my-[40px] items-center min-h-[400px] xl:h-[110vh]">
+    <div className="px-[30px] max-w-[1640px] mx-auto lg:px-[40px] xl:px-[65px] 2xl:px-[100px] about flex flex-col justify-center my-[20px] xl:my-[50px] items-center min-h-[400px] xl:h-[110vh]">
       <div className="flex flex-col lg:flex-row items-center w-full lg:justify-between gap-[40px] md:gap-8">
         <div className="flex-shrink-0 w-auto lg:w-[400px] xl:w-[470px] 2xl:w-[550px]">
           <img
