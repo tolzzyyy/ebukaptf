@@ -36,7 +36,7 @@ const Counter = ({ onComplete }) => {
   return (
     <div className="flex w-full justify-center px-10 items-center h-screen">
      
-      <h1 className="md:text-[100px] overflow-hidden text-[50px] w-full  py-4 border-t-[1px] border-[#B2B2B2] font-monument-extended translate-y-[20vh] md:translate-y-[40vh] font-bold">{count}</h1>
+      <h1 className="md:text-[100px] overflow-hidden text-[50px] w-full  py-4 border-t-[1px] border-[#B2B2B2] font-monument-extended translate-y-[30vh] md:translate-y-[40vh] font-bold">{count}</h1>
     </div>
   );
 };
