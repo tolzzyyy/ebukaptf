@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
-import { Route, Routes, useLocation, useNavigate } from 'react-router-dom';
+import { Route, Routes, useLocation } from 'react-router-dom';
 import { AnimatePresence } from 'framer-motion';
 import About from './Components/About';
 import Layout from './Components/Layout';
@@ -15,7 +15,6 @@ import Discord from './Components/Discord';
 // Counter Component
 const Counter = ({ onComplete }) => {
   const [count, setCount] = useState(0);
-  const navigate = useNavigate();
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -23,7 +22,6 @@ const Counter = ({ onComplete }) => {
         if (prevCount >= 100) {
           clearInterval(interval);
           onComplete();
-          navigate('/');
           return 100;
         }
         return prevCount + 1;
@@ -31,12 +29,13 @@ const Counter = ({ onComplete }) => {
     }, 30); // Adjust speed as needed
 
     return () => clearInterval(interval);
-  }, [navigate, onComplete]);
+  }, [onComplete]);
 
   return (
     <div className="flex w-full justify-center px-3 md:px-10 items-center h-screen">
-     
-      <h1 className="md:text-[100px] overflow-hidden text-[50px] w-full  py-4 border-t-[1px] border-[#B2B2B2] font-monument-extended translate-y-[35vh] md:translate-y-[40vh] font-bold">{count}</h1>
+      <h1 className="md:text-[100px] overflow-hidden text-[50px] w-full py-4 border-t-[1px] border-[#B2B2B2] font-monument-extended translate-y-[35vh] md:translate-y-[40vh] font-bold">
+        {count}
+      </h1>
     </div>
   );
 };
@@ -48,28 +47,25 @@ const App = () => {
   const [isLoading, setIsLoading] = useState(true);
   const [isMouseMoving, setIsMouseMoving] = useState(false);
 
-  // Custom cursor logic
+  // Custom cursor effect
   useEffect(() => {
     const cursor = cursorRef.current;
 
-    if (!cursor) {
-      return; // Ensure cursorRef is properly attached
-    }
+    if (!cursor) return;
 
     let mouseX = window.innerWidth / 2;
     let mouseY = window.innerHeight / 2;
     let cursorX = mouseX;
     let cursorY = mouseY;
-    const delay = 0.17; // Adjust delay for smoother cursor movement
+    const delay = 0.17;
 
     const moveCursor = (e) => {
       mouseX = e.clientX;
       mouseY = e.clientY;
-      setIsMouseMoving(true); // Set mouse moving state
+      setIsMouseMoving(true);
     };
 
     const updateCursor = () => {
-      // Update cursor position smoothly
       cursorX += (mouseX - cursorX) * delay;
       cursorY += (mouseY - cursorY) * delay;
 
@@ -86,11 +82,33 @@ const App = () => {
     return () => {
       window.removeEventListener('mousemove', moveCursor);
     };
-  }, [isLoading]); // Re-apply the effect whenever loading state changes
+  }, [isLoading]);
 
-  // Render loading screen if loading is not complete
+  useEffect(() => {
+    const checkIfCounterShouldShow = () => {
+      const lastShown = localStorage.getItem('lastCounterShown');
+      const now = new Date().getTime();
+      const THIRTY_MINUTES = 30 * 60 * 1000; // 30 minutes in milliseconds
+
+      if (!lastShown || now - parseInt(lastShown, 10) > THIRTY_MINUTES) {
+        setIsLoading(true);
+        sessionStorage.setItem('counterShown', 'false'); // Reset for this session
+        localStorage.setItem('lastCounterShown', now.toString());
+      } else {
+        setIsLoading(false);
+      }
+    };
+
+    checkIfCounterShouldShow();
+  }, []);
+
+  const handleCounterComplete = () => {
+    setIsLoading(false);
+    sessionStorage.setItem('counterShown', 'true'); // Set the counter as shown for the session
+  };
+
   if (isLoading) {
-    return <Counter onComplete={() => setIsLoading(false)} />;
+    return <Counter onComplete={handleCounterComplete} />;
   }
 
   return (
