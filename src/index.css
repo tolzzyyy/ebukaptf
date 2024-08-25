@@ -3,6 +3,15 @@
 @tailwind utilities;
 
 
+/* 
+@media screen and (min-width: 1390px) {
+  .image {
+    padding: 60px 80px;
+  width: 100px;
+  }
+} */
+
+
 /* Default Cursor Styling */
 .cursor {
   position: fixed;
