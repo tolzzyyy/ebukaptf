@@ -10,7 +10,7 @@ import black from '../Assets/Rectangle 71.png'
 
 const PlayGround = () => {
   return (
-    <div className='max-w-[1740px] h-full font-monument-extended mt-[20px] md:mt-[50px] px-[30px] mx-auto py-4 w-full lg:px-[40px] xl:px-[65px] 2xl:px-[100px]'>
+    <div className='max-w-[1540px] h-full part  font-monument-extended mt-[20px] md:mt-[50px] px-[30px] mx-auto py-4 w-full lg:px-[40px] xl:px-[35px] 2xl:px-[100px]'>
       <div className='mx-auto flex flex-col gap-2 text-center'>
         <h1 className='text-[11px] md:text-[15px]'>Welcome to my Playground</h1>
         <p className='text-[10px] font-extra-light text-[#1A1A1A]'>Interaction design, Motion design, 3D comps, user interfaces and sketches. Last Updated - August 2024</p>

@@ -95,7 +95,7 @@ const Nft = () => {
   };
 
   return (
-    <div className="max-w-[1740px] h-full font-monument-extended my-[20px] 2xl:px-[100px] mx-auto p-4 px-[30px] lg:px-[40px] xl:px-[65px] flex flex-col items-center justify-center">
+    <div className="max-w-[1540px] h-full font-monument-extended my-[20px] 2xl:px-[100px] part mx-auto p-4 px-[30px] lg:px-[40px] xl:px-[35px] flex flex-col items-center justify-center">
       <div className="relative w-full" style={{ paddingBottom: '56.25%' }}>
         <iframe
           src="https://player.vimeo.com/video/886521904?h=f75fc025e5"
