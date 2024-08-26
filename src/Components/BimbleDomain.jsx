@@ -73,7 +73,7 @@ const BimbleDomain = () => {
   }, []);
 
   // Scroll to top function
-  const scrollToTop = () => {
+  const scrollToTop = () => {      
     window.scrollTo({
       top: 0,
       behavior: "smooth",
