@@ -5,7 +5,7 @@ import { IoMail } from "react-icons/io5";
 
 const About = () => {
   return (
-    <div className="px-[20px] max-w-[1640px] mx-auto md:px-[30px] lg:px-[40px] xl:px-[55px] 2xl:px-[70px] about flex flex-col justify-center mt-[20px] xl:my-[20px] items-center min-h-[400px] xl:h-[100vh]">
+    <div className="px-[20px] max-w-[1640px] mx-auto md:px-[30px] lg:px-[40px] xl:px-[55px] 2xl:px-[70px] about flex flex-col justify-center mt-[20px] xl:my-[20px] items-center min-h-[400px] min-h-[calc(100vh-40px)]"> {/* Adjusted for taskbar */}
       <div className="flex flex-col md:flex-row items-center w-full lg:justify-between gap-[30px] md:gap-[40px]">
         <div className="w-auto md:w-[340px] xl:w-[470px] 2xl:w-[550px]">
           <img
@@ -14,7 +14,7 @@ const About = () => {
             alt="Profile"
           />
         </div>
-        <div className=" w-[500px] md:w-[690px] xl:w-[740px] 2xl:w-[840px] font-[400] leading-[1.5] text-[12px] md:text-[14px] lg:text-[15px] xl:text-[12px] 2xl:text-[14px] flex flex-col gap-[20px] md:gap-[30px] lg:gap-[30px] 2xl:gap-[30px]">
+        <div className="w-[500px] md:w-[690px] xl:w-[740px] 2xl:w-[840px] font-[400] leading-[1.5] text-[12px] md:text-[14px] lg:text-[15px] xl:text-[12px] 2xl:text-[14px] flex flex-col gap-[20px] md:gap-[30px] lg:gap-[30px] 2xl:gap-[30px]">
           <h1 className="text-[20px] font-monument-extended font-[200]">
             Hi, I’m EBUKA!
           </h1>
