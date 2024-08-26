@@ -14,12 +14,12 @@ const About = () => {
             alt="Profile"
           />
         </div>
-        <div className="w-[500px] md:w-[690px] xl:w-[740px] 2xl:w-[840px] font-[400] leading-[1.5] text-[12px] md:text-[14px] lg:text-[15px] xl:text-[12px] 2xl:text-[14px] flex flex-col gap-[20px] md:gap-[30px] lg:gap-[30px] 2xl:gap-[30px]">
+        <div className="w-auto md:w-[690px] xl:w-[740px] 2xl:w-[840px] font-[400] leading-[1.5] text-[10px] md:text-[14px] lg:text-[15px] xl:text-[12px] 2xl:text-[14px] flex flex-col gap-[20px] md:gap-[30px] lg:gap-[30px] 2xl:gap-[30px]">
           <h1 className="text-[20px] font-monument-extended font-[200]">
             Hi, I’m EBUKA!
           </h1>
           <p>
-            Hi i’m Ebuka! If you’ve gotten this far, I now consider us friends.
+            If you’ve gotten this far, I now consider us friends.
             It’s nice to meet you! I'm a Motion and visual designer passionate
             about creating visuals that tell stories and designing experiences
             that improve everyday lives. I previously worked with{" "}
@@ -53,7 +53,7 @@ const About = () => {
             </a>{" "}
             to make up for it :)
           </p>
-          <div className="flex items-center gap-4">
+          <div className="flex items-center  gap-4">
             <p>Stalk me</p>
             <div className="flex items-center gap-3">
               <a
@@ -85,7 +85,7 @@ const About = () => {
         </div>
       </div>
       <div className="border-t-[1px] flex flex-col items-center w-full gap-4 justify-center py-8 md:py-10 mt-[40px] md:mt-[50px] h-auto border-black">
-        <h1 className="font-[100] text-[12px] lg:text-[14px]">
+        <h1 className="font-[100] text-[9px] lg:text-[14px]">
           Is your BIG <span className="text-blue-500">idea</span> ready to go{" "}
           <span className="text-blue-500">WILD</span>?
         </h1>
