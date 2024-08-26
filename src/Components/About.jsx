@@ -5,7 +5,7 @@ import { IoMail } from "react-icons/io5";
 
 const About = () => {
   return (
-    <div className="px-[20px] max-w-[1640px] mx-auto md:px-[30px] lg:px-[40px] xl:px-[55px] 2xl:px-[70px] about flex flex-col justify-center mt-[20px] xl:my-[20px] items-center min-h-[400px] min-h-[calc(100vh-40px)]"> {/* Adjusted for taskbar */}
+    <div className="px-[30px] max-w-[1640px] mx-auto md:px-[30px] lg:px-[40px] xl:px-[55px] 2xl:px-[70px] about flex flex-col justify-center mt-[20px] xl:my-[20px] items-center min-h-[400px] min-h-[calc(100vh-40px)]"> {/* Adjusted for taskbar */}
       <div className="flex flex-col md:flex-row items-center w-full lg:justify-between gap-[30px] md:gap-[40px]">
         <div className="w-auto md:w-[340px] xl:w-[470px] 2xl:w-[550px]">
           <img
