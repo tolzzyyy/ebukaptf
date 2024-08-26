@@ -26,7 +26,7 @@ const ProjectPage = () => {
 
 
   return (
-    <div className="w-full mt-[20px] max-w-[1540px]part mx-auto px-[30px] lg:px-[40px] xl:px-[35px] h-full border-t-[1px]">
+    <div className="w-full mt-[20px] max-w-[1540px]  mx-auto px-[30px] lg:px-[40px] xl:px-[65px] h-full border-t-[1px]">
       <div className="flex flex-col gap-4 ">
         {/* Main Grid Container */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-[50px] mt-[30px] md:mt-[80px]">
