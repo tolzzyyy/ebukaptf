@@ -63,31 +63,31 @@ const About = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <FaBehance size={26} className="text-blue-500" />
+                <FaBehance size={24} className="text-blue-500" />
               </a>
               <a
                 href="https://www.linkedin.com/in/ebukau?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <FaLinkedinIn size={24} className="text-blue-500" />
+                <FaLinkedinIn size={22} className="text-blue-500" />
               </a>
               <a
                 href="https://x.com/t0_ge_?s=21"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <FaTwitter size={24} className="text-blue-500" />
+                <FaTwitter size={22} className="text-blue-500" />
               </a>
               <a href="mailto:Eburogersuche@yahoo.com">
-                <IoMail size={24} className="text-blue-500" />
+                <IoMail size={22} className="text-blue-500" />
               </a>
             </div>
           </div>
         </div>
       </div>
       <div className="border-t-[1px] flex flex-col items-center w-full gap-4 justify-center py-8 md:py-12 mt-[50px] h-auto border-black mx-[20px] lg:mx-[40px] xl:mx-[65px]">
-      <h1 className="font-[100] text-[11px]">Is your BIG <span className="text-blue-500">idea</span>  ready to go <span className="text-blue-500">WILD</span></h1>
+      <h1 className="font-[100] text-[9px] md:text-[11px]">Is your BIG <span className="text-blue-500">idea</span>  ready to go <span className="text-blue-500">WILD</span></h1>
         <h1 className="text-lg font-bold lg:text-2xl">
           Let’s work <span className="text-blue-500">together</span> :)
         </h1>
