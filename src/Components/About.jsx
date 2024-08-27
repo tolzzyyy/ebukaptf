@@ -5,21 +5,21 @@ import { IoMail } from "react-icons/io5";
 
 const About = () => {
   return (
-    <div className="px-[20px] max-w-[1540px] mx-auto lg:px-[40px] xl:px-[65px] 2xl:px-[100px] about flex flex-col justify-center mt-[50px] xl:my-[40px] items-center min-h-[400px] xl:h-[100vh]">
+    <div className="px-[30px] max-w-[1640px] mx-auto lg:px-[40px] xl:px-[75px] 2xl:px-[100px] about flex flex-col justify-center  mt-[40px] xl:my-[50px] 2xl:my-[20px] items-center min-h-[400px] xl:h-[110vh]">
       <div className="flex flex-col md:flex-row items-center w-full lg:justify-between gap-[20px] md:gap-[30px]">
-        <div className="w-auto md:w-[410px] xl:max-w-[450px] 2xl:w-[520px]">
+        <div className="w-auto md:w-[410px] xl:max-w-[450px] 2xl:w-[550px]">
           <img
             src={Ebuka}
             className="w-full h-auto object-cover"
             alt="Profile"
           />
         </div>
-        <div className="w-full md:max-w-[720px] xl:max-w-[750px] 2xl:max-w-[770px] font-[400] leading-[1.7] text-[10px] md:text-[8px] 2xl:text-[14px] xl:text-[12px] flex flex-col gap-[20px]">
+        <div className="w-full md:max-w-[720px] xl:max-w-[770px] 2xl:max-w-[870px] font-[400] leading-[1.7] text-[10px] md:text-[8px] 2xl:text-[14px] xl:text-[12px] flex flex-col gap-[18px]">
           <h1 className="text-[24px] font-monument-extended font-[200]">
             Hi, I’m EBUKA!
           </h1>
           <p>
-            Hi i’m Ebuka! If you’ve gotten this far, I now consider us friends.
+             If you’ve gotten this far, I now consider us friends.
             It’s nice to meet you! I'm a Motion and visual designer passionate
             about creating visuals that tell stories and designing experiences
             that improve everyday lives. I previously worked with{" "}
@@ -92,15 +92,33 @@ const About = () => {
           </div>
         </div>
       </div>
-      <div className="border-t-[1px] flex flex-col items-center w-full gap-4 justify-center py-8 md:py-12 mt-[50px] h-auto border-black">
-        <h1 className="font-[100] text-[11px] md:text-[14px]">
+      <div className="border-t-[1px] flex flex-col items-center w-full gap-4 justify-center py-8 md:py-12 mt-[50px] md:mt-[70px] h-auto border-black">
+        <h1 className="font-[100] text-[10px] md:text-[14px]">
           Is your BIG <span className="text-blue-500">idea</span> ready to go{" "}
           <span className="text-blue-500">WILD</span>?
         </h1>
         <h1 className="text-lg font-bold lg:text-2xl">
           Let’s work <span className="text-blue-500">together</span> :)
         </h1>
+        <div className="flex flex-col items-center pt-[100px]    justify-center">
+          <div className="flex items-center gap-3">
+            <a href="https://www.behance.net/ebukauche1" target="_blank" rel="noopener noreferrer">
+              <FaBehance size={20} />
+            </a>
+            <a href="https://www.linkedin.com/in/ebukau?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank" rel="noopener noreferrer">
+              <FaLinkedinIn size={20} />
+            </a>
+            <a href="https://x.com/t0_ge_?s=21" target="_blank" rel="noopener noreferrer">
+              <FaTwitter size={20} />
+            </a>
+            <a href="mailto:Eburogersuche@yahoo.com">
+              <IoMail size={20} />
+            </a>
+          </div>
+          <p className="md:text-[11px]   text-[9px] mt-2 font-thin">©2024 Ebuka. All rights reserved.</p>
+        </div>
       </div>
+      
     </div>
   );
 };

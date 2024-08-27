@@ -82,7 +82,7 @@ const BimblePage = () => {
   };
 
   return (
-    <div className="max-w-[1540px] h-full font-monument-extended my-[20px] mx-auto p-4 px-[30px] 2xl:px-[100px]  lg:px-[40px] xl:px-[65px] flex flex-col items-center justify-center">
+    <div className="max-w-[1640px] h-full font-monument-extended my-[20px] mx-auto p-4 px-[30px] 2xl:px-[100px]  lg:px-[40px] xl:px-[65px] flex flex-col items-center justify-center">
     <div className="relative w-full" style={{ paddingBottom: '56.25%' }}>
         <iframe
           src="https://player.vimeo.com/video/1000084251?h=ff5f0461fa"
@@ -184,7 +184,7 @@ const BimblePage = () => {
           </Link>
         </div>
       </div>
-      <div className="flex flex-col items-center my-[30px] justify-center">
+      <div className="flex flex-col items-center my-[70px] md:my-[100px]  justify-center">
           <div className="flex items-center gap-3">
             <a href="https://www.behance.net/ebukauche1" target="_blank" rel="noopener noreferrer">
               <FaBehance size={20} />

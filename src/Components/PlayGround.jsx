@@ -7,10 +7,12 @@ import mulan from '../Assets/Rectangle 70.png'
 import discord from '../Assets/Rectangle 66 (4).png'
 import scar from '../Assets/scar.png'
 import black from '../Assets/Rectangle 71.png'
+import { FaBehance, FaLinkedinIn, FaTwitter } from 'react-icons/fa';
+import { IoMail } from 'react-icons/io5';
 
 const PlayGround = () => {
   return (
-    <div className='max-w-[1540px] h-full part  font-monument-extended mt-[20px] md:mt-[50px] px-[30px] mx-auto py-4 w-full lg:px-[40px] xl:px-[35px] 2xl:px-[100px]'>
+    <div className='max-w-[1640px]  h-full part  font-monument-extended mt-[20px] md:mt-[50px] px-[30px] mx-auto py-4 w-full lg:px-[40px] xl:px-[35px] 2xl:px-[100px]'>
       <div className='mx-auto flex flex-col gap-2 text-center'>
         <h1 className='text-[11px] md:text-[15px]'>Welcome to my Playground</h1>
         <p className='text-[10px] font-extra-light text-[#1A1A1A]'>Interaction design, Motion design, 3D comps, user interfaces and sketches. Last Updated - August 2024</p>
@@ -30,6 +32,24 @@ const PlayGround = () => {
          
         </div>
       </div>
+
+      <div className="flex flex-col items-center pt-[100px]    justify-center">
+          <div className="flex items-center gap-3">
+            <a href="https://www.behance.net/ebukauche1" target="_blank" rel="noopener noreferrer">
+              <FaBehance size={20} />
+            </a>
+            <a href="https://www.linkedin.com/in/ebukau?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank" rel="noopener noreferrer">
+              <FaLinkedinIn size={20} />
+            </a>
+            <a href="https://x.com/t0_ge_?s=21" target="_blank" rel="noopener noreferrer">
+              <FaTwitter size={20} />
+            </a>
+            <a href="mailto:Eburogersuche@yahoo.com">
+              <IoMail size={20} />
+            </a>
+          </div>
+          <p className="md:text-[11px]   text-[9px] mt-2 font-thin">©2024 Ebuka. All rights reserved.</p>
+        </div>
     </div>
   );
 }

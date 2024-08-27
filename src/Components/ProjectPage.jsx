@@ -26,7 +26,7 @@ const ProjectPage = () => {
 
 
   return (
-    <div className="w-full mt-[20px] max-w-[1540px]  mx-auto px-[30px] lg:px-[40px] xl:px-[65px] h-full border-t-[1px]">
+    <div className="w-full mt-[20px] max-w-[1640px]   mx-auto px-[30px] lg:px-[40px] xl:px-[65px] 2xl:px-[100px]  h-full border-t-[1px]">
       <div className="flex flex-col gap-4 ">
         {/* Main Grid Container */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-[50px] mt-[30px] md:mt-[80px]">
@@ -165,7 +165,7 @@ const ProjectPage = () => {
         </div>
 
         {/* Social Media Links */}
-        <div className="flex flex-col items-center my-[30px] justify-center">
+        <div className="flex flex-col items-center my-[70px] md:my-[100px] justify-center">
           <div className="flex items-center gap-3">
             <a href="https://www.behance.net/ebukauche1" target="_blank" rel="noopener noreferrer">
               <FaBehance size={20} />

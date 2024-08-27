@@ -79,7 +79,7 @@ const Discord = () => {
   };
 
   return (
-    <div className="max-w-[1540px] h-full font-monument-extended my-[20px] mx-auto p-4 px-[30px] 2xl:px-[100px]  lg:px-[40px] xl:px-[65px] gap-4 flex flex-col items-center justify-center">
+    <div className="max-w-[1640px] h-full font-monument-extended my-[20px] mx-auto p-4 px-[30px] 2xl:px-[100px]  lg:px-[40px] xl:px-[65px] gap-4 flex flex-col items-center justify-center">
       <div className="w-full">
         <Swiper
           modules={[Autoplay, EffectFade]}
@@ -155,7 +155,7 @@ const Discord = () => {
           </h1>
         </div>
       </div>
-      <div className="flex flex-col items-center my-[30px] justify-center">
+      <div className="flex flex-col items-center my-[70px] md:my-[100px]  justify-center">
         <div className="flex items-center gap-3">
           <a
             href="https://www.behance.net/ebukauche1"
