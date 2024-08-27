@@ -5,16 +5,16 @@ import { IoMail } from "react-icons/io5";
 
 const About = () => {
   return (
-    <div className="px-[30px] max-w-[1640px] mx-auto lg:px-[40px] xl:px-[75px] 2xl:px-[100px] about flex flex-col justify-center  mt-[40px] xl:my-[50px] 2xl:my-[20px] items-center min-h-[400px] xl:h-[110vh]">
-      <div className="flex flex-col md:flex-row items-center w-full lg:justify-between gap-[20px] md:gap-[30px]">
-        <div className="w-auto md:w-[410px] xl:max-w-[450px] 2xl:w-[550px]">
+    <div className="px-[30px] max-w-[1640px] mx-auto lg:px-[40px] xl:px-[75px] 2xl:px-[100px] about flex flex-col justify-center  mt-[40px] xl:my-[55px] 2xl:my-[20px] items-center min-h-[400px] xl:h-[110vh]">
+      <div className="flex flex-col md:flex-row items-center h-full w-full lg:justify-between gap-[20px] md:gap-[30px]">
+        <div className="w-auto md:w-[410px] xl:w-[440px] 2xl:w-[550px]">
           <img
             src={Ebuka}
             className="w-full h-auto object-cover"
             alt="Profile"
           />
         </div>
-        <div className="w-full md:max-w-[720px] xl:max-w-[770px] 2xl:max-w-[870px] font-[400] leading-[1.7] text-[10px] md:text-[8px] 2xl:text-[14px] xl:text-[12px] flex flex-col gap-[18px]">
+        <div className="w-full md:max-w-[720px] xl:w-[770px] 2xl:max-w-[870px] font-[400] leading-[1.7] text-[10px] md:text-[8px] 2xl:text-[14px] xl:text-[12px] flex flex-col gap-[18px]">
           <h1 className="text-[24px] font-monument-extended font-[200]">
             Hi, I’m EBUKA!
           </h1>
